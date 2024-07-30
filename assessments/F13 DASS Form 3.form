@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" name="F13 DASS Form" title="F13 DASS Form" assessment-version="3" ongoing="false" category="DEF" assessment-type="0" patient-assessment="1" location-assessment="0" provider-assessment="0" plan-assessment="0" layout="0" shareable="true" supports-modern-validation="0" experimental-printing="1">
+  <description>F13 DASS Form</description>
+  <triggerable_classes>
+    <triggerable_class_client>
+      <triggerable_class name="Check User Role" version="1.0" internal_class_name="Assessment"/>
+    </triggerable_class_client>
+  </triggerable_classes>
+  <elements>
+    <element element_type="group" name="e49010443214240_group" title="" element_position="5" show_in_reports="true" extra_css_classes="">
+      <children>
+        <element element_type="dynamic_text" name="e50534145813080_dynamic_text" title="" element_position="0" show_in_reports="true">
+          <description>&lt;div&gt;&lt;p&gt;&lt;b&gt;Thank you so much for taking the time to complete the forms. You have now finished all of the required questions. Please feel free to discuss your results or any concerns you have with your clinician.&lt;/b&gt;&lt;/p&gt;&lt;/div&gt;</description>
+        </element>
+      </children>
+    </element>
+    <element element_type="hidden_field" name="staff_member" element_position="1" format="" show_in_reports="true">
+    </element>
+    <element element_type="show_if" name="e49010587777460_show_if" element_position="6" show_in_reports="true">
+      <description>staff_member='yes'</description>
+      <children>
+        <element element_type="group" name="e69891052095260_group" show_in_reports="true">
+          <children>
+            <element element_type="group" name="e49010592632480_group" element_position="0" show_in_reports="true">
+              <children>
+                <element element_type="dynamic_text" name="dynamic_text_depression_score" title="" element_position="26" show_in_reports="true">
+                  <description>&lt;b&gt;Depression Score:&lt;/b&gt; {depression_score}</description>
+                </element>
+                <element element_type="dynamic_text" name="dynamic_text_stress_total" show_in_reports="true">
+                  <description>&lt;b&gt;Stress Score:&lt;/b&gt; {stress_score}</description>
+                </element>
+                <element element_type="dynamic_text" name="dynamic_text_anxiety_score" show_in_reports="true">
+                  <description>&lt;b&gt;Anxiety Score:&lt;/b&gt; {anxiety_score}</description>
+                </element>
+              </children>
+            </element>
+            <element element_type="group" name="e69891140957240_group" title="Scores Interpretation" element_position="1" show_in_reports="true">
+              <children>
+                <element element_type="show_if" name="anxiety_0_3" element_position="0" show_in_reports="true">
+                  <description>anxiety_score&gt;=0 and anxiety_score&lt;=3</description>
+                  <children>
+                    <element element_type="label" name="e143682880_label" element_position="0" show_in_reports="true">
+                      <description>&lt;b&gt;Anxiety&lt;/b&gt; = Normal</description>
+                    </element>
+                  </children>
+                </element>
+                <element element_type="show_if" name="anxiety_4_5" element_position="1" show_in_reports="true">
+                  <description>anxiety_score&gt;=4 and anxiety_score&lt;=5</description>
+                  <children>
+                    <element element_type="label" name="label_69891140592360" element_position="0" show_in_reports="true">
+                      <description>&lt;b&gt;Anxiety&lt;/b&gt; = Mild</description>
+                    </element>
+                  </children>
+                </element>
+                <element element_type="show_if" name="anxiety_6_7" element_position="2" show_in_reports="true">
+                  <description>anxiety_score&gt;=6 and anxiety_score&lt;=7</description>
+                  <children>
+                    <element element_type="label" name="label_69891139360480" element_position="0" show_in_reports="true">
+                      <description>&lt;b&gt;Anxiety&lt;/b&gt; = Moderate</description>
+                    </element>
+                  </children>
+                </element>
+                <element element_type="show_if" name="anxiety_8_9" element_position="3" show_in_reports="true">
+                  <description>anxiety_score&gt;=8 and anxiety_score&lt;=9</description>
+                  <children>
+                    <element element_type="label" name="label_69891041008940" element_position="0" show_in_reports="true">
+                      <description>&lt;b&gt;Anxiety&lt;/b&gt; = Severe</description>
+                    </element>
+                  </children>
+                </element>
+                <element element_type="show_if" name="anxiety_10_plus" element_position="4" show_in_reports="true">
+                  <description>anxiety_score&gt;=10</description>
+                  <children>
+                    <element element_type="label" name="label_69891136725820" element_position="0" show_in_reports="true">
+                      <description>&lt;b&gt;Anxiety&lt;/b&gt; = Extremely Severe</description>
+                    </element>
+                  </children>
+                </element>
+              </children>
+            </element>
+            <element element_type="group" name="e69890976300580_group" element_position="2" show_in_reports="true">
+              <children>
+                <element element_type="show_if" name="depression_0_4" element_position="0" show_in_reports="true">
+                  <description>depression_score&gt;=0 and depression_score&lt;=4</description>
+                  <children>
+                    <element element_type="label" name="label_69890970906860" element_position="0" show_in_reports="true">
+                      <description>&lt;b&gt;Depression&lt;/b&gt; = Normal</description>
+                    </element>
+                  </children>
+                </element>
+                <element element_type="show_if" name="depression_5_6" element_position="1" show_in_reports="true">
+                  <description>depression_score&gt;=5 and depression_score&lt;=6</description>
+                  <children>
+                    <element element_type="label" name="label_69891138786480" element_position="0" show_in_reports="true">
+                      <description>&lt;b&gt;Depression&lt;/b&gt; = Mild</description>
+                    </element>
+                  </children>
+                </element>
+                <element element_type="show_if" name="depression_7_10" element_position="2" show_in_reports="true">
+                  <description>depression_score&gt;=7 and depression_score&lt;=10</description>
+                  <children>
+                    <element element_type="label" name="label_69890963109740" element_position="0" show_in_reports="true">
+                      <description>&lt;b&gt;Depression&lt;/b&gt; = Moderate</description>
+                    </element>
+                  </children>
+                </element>
+                <element element_type="show_if" name="depression_11_13" element_position="3" show_in_reports="true">
+                  <description>depression_score&gt;=11 and depression_score&lt;=13</description>
+                  <children>
+                    <element element_type="label" name="label_69890977990140" element_position="0" show_in_reports="true">
+                      <description>&lt;b&gt;Depression&lt;/b&gt; = Severe</description>
+                    </element>
+                  </children>
+                </element>
+                <element element_type="show_if" name="depression_14_plus" element_position="4" show_in_reports="true">
+                  <description>depression_score&gt;=14</description>
+                  <children>
+                    <element element_type="label" name="label_69890977127100" element_position="0" show_in_reports="true">
+                      <description>&lt;b&gt;Depression&lt;/b&gt; = Extremely Severe</description>
+                    </element>
+                  </children>
+                </element>
+              </children>
+            </element>
+            <element element_type="group" name="group_69891094026640" element_position="3" show_in_reports="true">
+              <children>
+                <element element_type="show_if" name="stress_0_7" element_position="0" show_in_reports="true">
+                  <description>stress_score&gt;=0 and stress_score&lt;=7</description>
+                  <children>
+                    <element element_type="label" name="label_69890971135500" element_position="1" show_in_reports="true">
+                      <description>&lt;b&gt;Stress&lt;/b&gt; = Normal</description>
+                    </element>
+                  </children>
+                </element>
+                <element element_type="show_if" name="stress_8_9" element_position="1" show_in_reports="true">
+                  <description>stress_score&gt;=8 and stress_score&lt;=9</description>
+                  <children>
+                    <element element_type="label" name="label_69891238982220" element_position="1" show_in_reports="true">
+                      <description>&lt;b&gt;Stress&lt;/b&gt; = Mild</description>
+                    </element>
+                  </children>
+                </element>
+                <element element_type="show_if" name="stress_10_12" element_position="2" show_in_reports="true">
+                  <description>stress_score&gt;=10 and stress_score&lt;=12</description>
+                  <children>
+                    <element element_type="label" name="label_69890984461060" element_position="1" show_in_reports="true">
+                      <description>&lt;b&gt;Stress&lt;/b&gt; = Moderate</description>
+                    </element>
+                  </children>
+                </element>
+                <element element_type="show_if" name="stress_13_16" element_position="3" show_in_reports="true">
+                  <description>stress_score&gt;=13 and stress_score&lt;=16</description>
+                  <children>
+                    <element element_type="label" name="label_69890976084880" element_position="1" show_in_reports="true">
+                      <description>&lt;b&gt;Stress&lt;/b&gt; = Severe</description>
+                    </element>
+                  </children>
+                </element>
+                <element element_type="show_if" name="stress_17_plus" element_position="4" show_in_reports="true">
+                  <description>stress_score&gt;=17</description>
+                  <children>
+                    <element element_type="label" name="label_69890977403680" element_position="1" show_in_reports="true">
+                      <description>&lt;b&gt;Stress&lt;/b&gt; = Extremely Severe</description>
+                    </element>
+                  </children>
+                </element>
+              </children>
+            </element>
+          </children>
+        </element>
+      </children>
+    </element>
+    <element element_type="hidden_field" name="patient_id" element_position="0" format="integer" show_in_reports="true">
+    </element>
+    <element element_type="group" name="e111859440_group" title="Client Details" element_position="2" show_in_reports="true" extra_css_classes="">
+      <children>
+        <element element_type="patient_field" name="e50601238674600_patient_field" title="Last Name" value="family_name" element_position="0" required="true" show_in_reports="true" read_only="false">
+        </element>
+        <element element_type="patient_field" name="e50601241933440_patient_field" title="First Name" value="given_name" element_position="1" required="true" show_in_reports="true" read_only="false">
+        </element>
+      </children>
+    </element>
+    <element element_type="group" name="e137755400_group" title="DASS-21" element_position="3" show_in_reports="true" extra_css_classes="">
+      <children>
+        <element element_type="dynamic_text" name="e50601106970140_dynamic_text" title="" element_position="0" show_in_reports="true">
+          <description>&lt;div&gt;
+  	&lt;p&gt;Lovibond, S.H., Lovibond, P.F. (1995). Reproduced with permission.&lt;/p&gt;
+	&lt;p&gt;&lt;b&gt;Instructions:&lt;/b&gt; Please read each statement and check the box which indicates how much the statement applied to you over the past week. There are no right or wrong answers. Do not spend too much time on any statement. &lt;/p&gt;
+&lt;/div&gt;</description>
+        </element>
+      </children>
+    </element>
+    <element element_type="group" name="e69891224471360_group" title="QUESTIONS" element_position="4" show_in_reports="true">
+      <children>
+        <element element_type="select" name="q1" title="Q1: I find it hard to wind down." element_position="0" required="true" show_in_reports="true" onchange="" read_only="false">
+          <options>
+            <option text="NEVER - Did not apply to me at all" value="0" element_position="0"/>
+            <option text="SOMETIMES - Applied to me to some degree, or some of the time" value="1" element_position="1"/>
+            <option text="OFTEN - Applied to me to a considerable degree, or a good part of time" value="2" element_position="2"/>
+            <option text="ALMOST ALWAYS - Applied to me very much, or most of the time." value="3" element_position="3"/>
+          </options>
+        </element>
+        <element element_type="select" name="q2" title="Q2: I was aware of dryness of my mouth." element_position="1" required="true" show_in_reports="true" onchange="" read_only="false">
+          <options>
+            <option text="NEVER - Did not apply to me at all" value="0" element_position="0"/>
+            <option text="SOMETIMES - Applied to me to some degree or some of the time" value="1" element_position="1"/>
+            <option text="OFTEN - Applied to me to a considerable degree or a good part of time" value="2" element_position="2"/>
+            <option text="ALMOST ALWAYS - Applied to me very much or most of the time" value="3" element_position="3"/>
+          </options>
+        </element>
+        <element element_type="select" name="q3" title="Q3: I couldn't seem to experience any positive feeling at all." element_position="2" required="true" show_in_reports="true" onchange="" read_only="false">
+          <options>
+            <option text="NEVER - Did not apply to me at all" value="0" element_position="0"/>
+            <option text="SOMETIMES - Applied to me to some degree or some of the time" value="1" element_position="1"/>
+            <option text="OFTEN - Applied to me to a considerable degree or a good part of time" value="2" element_position="2"/>
+            <option text="ALMOST ALWAYS - Applied to me very much or most of the time" value="3" element_position="3"/>
+          </options>
+        </element>
+        <element element_type="select" name="q4" title="Q4: I experienced breathing difficulty (eg. excessively rapid breathing, breathlessness in the absence of physical exertion)." element_position="3" required="true" show_in_reports="true" onchange="" read_only="false">
+          <options>
+            <option text="" value="" element_position="0"/>
+            <option text="NEVER - Did not apply to me at all" value="0" element_position="1"/>
+            <option text="SOMETIMES - Applied to me to some degree or some of the time" value="1" element_position="2"/>
+            <option text="OFTEN - Applied to me to a considerable degree or a good part of time" value="2" element_position="3"/>
+            <option text="ALMOST ALWAYS - Applied to me very much or most of the time" value="3" element_position="4"/>
+          </options>
+        </element>
+        <element element_type="select" name="q5" title="Q5: I found it difficult to work up the initiative to do things." element_position="4" required="true" show_in_reports="true" onchange="" read_only="false">
+          <options>
+            <option text="" value="" element_position="0"/>
+            <option text="NEVER - Did not apply to me at all" value="0" element_position="1"/>
+            <option text="SOMETIMES - Applied to me to some degree or some of the time" value="1" element_position="2"/>
+            <option text="OFTEN - Applied to me to a considerable degree or a good part of time" value="2" element_position="3"/>
+            <option text="ALMOST ALWAYS - Applied to me very much or most of the time" value="3" element_position="4"/>
+          </options>
+        </element>
+        <element element_type="select" name="q6" title="Q6: I tended to over-react to situations." element_position="5" required="true" show_in_reports="true" onchange="" read_only="false">
+          <options>
+            <option text="" value="" element_position="0"/>
+            <option text="NEVER - Did not apply to me at all" value="0" element_position="1"/>
+            <option text="SOMETIMES - Applied to me to some degree or some of the time" value="1" element_position="2"/>
+            <option text="OFTEN - Applied to me to a considerable degree or a good part of time" value="2" element_position="3"/>
+            <option text="ALMOST ALWAYS - Applied to me very much or most of the time" value="3" element_position="4"/>
+          </options>
+        </element>
+        <element element_type="select" name="q7" title="Q7: I experienced trembling (eg. in the hands)." element_position="6" required="true" show_in_reports="true" onchange="" read_only="false">
+          <options>
+            <option text="" value="" element_position="0"/>
+            <option text="NEVER - Did not apply to me at all" value="0" element_position="1"/>
+            <option text="SOMETIMES - Applied to me to some degree or some of the time" value="1" element_position="2"/>
+            <option text="OFTEN - Applied to me to a considerable degree or a good part of time" value="2" element_position="3"/>
+            <option text="ALMOST ALWAYS - Applied to me very much or most of the time" value="3" element_position="4"/>
+          </options>
+        </element>
+        <element element_type="select" name="q8" title="Q8: I felt that I was using a lot of nervous energy." element_position="7" required="true" show_in_reports="true" onchange="" read_only="false">
+          <options>
+            <option text="" value="" element_position="0"/>
+            <option text="NEVER - Did not apply to me at all" value="0" element_position="1"/>
+            <option text="SOMETIMES - Applied to me to some degree or some of the time" value="1" element_position="2"/>
+            <option text="OFTEN - Applied to me to a considerable degree or a good part of time" value="2" element_position="3"/>
+            <option text="ALMOST ALWAYS - Applied to me very much or most of the time" value="3" element_position="4"/>
+          </options>
+        </element>
+        <element element_type="select" name="q9" title="Q9: I was worried about the situations in which I might panic and make a fool of myself." element_position="8" required="true" show_in_reports="true" onchange="" read_only="false">
+          <options>
+            <option text="" value="" element_position="0"/>
+            <option text="NEVER - Did not apply to me at all" value="0" element_position="1"/>
+            <option text="SOMETIMES - Applied to me to some degree or some of the time" value="1" element_position="2"/>
+            <option text="OFTEN - Applied to me to a considerable degree or a good part of time" value="2" element_position="3"/>
+            <option text="ALMOST ALWAYS - Applied to me very much or most of the time" value="3" element_position="4"/>
+          </options>
+        </element>
+        <element element_type="select" name="q10" title="Q10: I felt that I had nothing to look forward to." element_position="9" required="true" show_in_reports="true" onchange="" read_only="false">
+          <options>
+            <option text="" value="" element_position="0"/>
+            <option text="NEVER - Did not apply to me at all" value="0" element_position="1"/>
+            <option text="SOMETIMES - Applied to me to some degree or some of the time" value="1" element_position="2"/>
+            <option text="OFTEN - Applied to me to a considerable degree or a good part of time" value="2" element_position="3"/>
+            <option text="ALMOST ALWAYS - Applied to me very much or most of the time" value="3" element_position="4"/>
+          </options>
+        </element>
+        <element element_type="select" name="q11" title="Q11: I found myself getting agitated." element_position="10" required="true" show_in_reports="true" onchange="" read_only="false">
+          <options>
+            <option text="" value="" element_position="0"/>
+            <option text="NEVER - Did not apply to me at all" value="0" element_position="1"/>
+            <option text="SOMETIMES - Applied to me to some degree or some of the time" value="1" element_position="2"/>
+            <option text="OFTEN - Applied to me to a considerable degree or a good part of time" value="2" element_position="3"/>
+            <option text="ALMOST ALWAYS - Applied to me very much or most of the time" value="3" element_position="4"/>
+          </options>
+        </element>
+        <element element_type="select" name="q12" title="Q12: I found it difficult to relax." element_position="11" required="true" show_in_reports="true" onchange="" read_only="false">
+          <options>
+            <option text="" value="" element_position="0"/>
+            <option text="NEVER - Did not apply to me at all" value="0" element_position="1"/>
+            <option text="SOMETIMES - Applied to me to some degree or some of the time" value="1" element_position="2"/>
+            <option text="OFTEN - Applied to me to a considerable degree or a good part of time" value="2" element_position="3"/>
+            <option text="ALMOST ALWAYS - Applied to me very much or most of the time" value="3" element_position="4"/>
+          </options>
+        </element>
+        <element element_type="select" name="q13" title="Q13: I felt down-hearted and blue." element_position="12" required="true" show_in_reports="true" onchange="" read_only="false">
+          <options>
+            <option text="" value="" element_position="0"/>
+            <option text="NEVER - Did not apply to me at all" value="0" element_position="1"/>
+            <option text="SOMETIMES - Applied to me to some degree or some of the time" value="1" element_position="2"/>
+            <option text="OFTEN - Applied to me to a considerable degree or a good part of time" value="2" element_position="3"/>
+            <option text="ALMOST ALWAYS - Applied to me very much or most of the time" value="3" element_position="4"/>
+          </options>
+        </element>
+        <element element_type="select" name="q14" title="Q14: I was intolerant of anything that kept me from getting on with what I was doing." element_position="13" required="true" show_in_reports="true" onchange="" read_only="false">
+          <options>
+            <option text="" value="" element_position="0"/>
+            <option text="NEVER - Did not apply to me at all" value="0" element_position="1"/>
+            <option text="SOMETIMES - Applied to me to some degree or some of the time" value="1" element_position="2"/>
+            <option text="OFTEN - Applied to me to a considerable degree or a good part of time" value="2" element_position="3"/>
+            <option text="ALMOST ALWAYS - Applied to me very much or most of the time" value="3" element_position="4"/>
+          </options>
+        </element>
+        <element element_type="select" name="q15" title="Q15: I felt I was close to panic." element_position="14" required="true" show_in_reports="true" onchange="" read_only="false">
+          <options>
+            <option text="" value="" element_position="0"/>
+            <option text="NEVER - Did not apply to me at all" value="0" element_position="1"/>
+            <option text="SOMETIMES - Applied to me to some degree or some of the time" value="1" element_position="2"/>
+            <option text="OFTEN - Applied to me to a considerable degree or a good part of time" value="2" element_position="3"/>
+            <option text="ALMOST ALWAYS - Applied to me very much or most of the time" value="3" element_position="4"/>
+          </options>
+        </element>
+        <element element_type="select" name="q16" title="Q16: I was unable to become enthusiastic about anything." element_position="15" required="true" show_in_reports="true" onchange="" read_only="false">
+          <options>
+            <option text="" value="" element_position="0"/>
+            <option text="NEVER - Did not apply to me at all" value="0" element_position="1"/>
+            <option text="SOMETIMES - Applied to me to some degree or some of the time" value="1" element_position="2"/>
+            <option text="OFTEN - Applied to me to a considerable degree or a good part of time" value="2" element_position="3"/>
+            <option text="ALMOST ALWAYS - Applied to me very much or most of the time" value="3" element_position="4"/>
+          </options>
+        </element>
+        <element element_type="select" name="q17" title="Q17: I felt I wasn't worth much as a person." element_position="16" required="true" show_in_reports="true" onchange="" read_only="false">
+          <options>
+            <option text="" value="" element_position="0"/>
+            <option text="NEVER - Did not apply to me at all" value="0" element_position="1"/>
+            <option text="SOMETIMES - Applied to me to some degree or some of the time" value="1" element_position="2"/>
+            <option text="OFTEN - Applied to me to a considerable degree or a good part of time" value="2" element_position="3"/>
+            <option text="ALMOST ALWAYS - Applied to me very much or most of the time" value="3" element_position="4"/>
+          </options>
+        </element>
+        <element element_type="select" name="q18" title="Q18: I felt that I was rather touchy." element_position="17" required="true" show_in_reports="true" onchange="" read_only="false">
+          <options>
+            <option text="" value="" element_position="0"/>
+            <option text="NEVER - Did not apply to me at all" value="0" element_position="1"/>
+            <option text="SOMETIMES - Applied to me to some degree or some of the time" value="1" element_position="2"/>
+            <option text="OFTEN - Applied to me to a considerable degree or a good part of time" value="2" element_position="3"/>
+            <option text="ALMOST ALWAYS - Applied to me very much or most of the time" value="3" element_position="4"/>
+          </options>
+        </element>
+        <element element_type="select" name="q19" title="Q19: I was aware of the action of my heart in the absence of physical exertion (eg. sense of heart rate increase, heart missing a beat)." element_position="18" required="true" show_in_reports="true" onchange="" read_only="false">
+          <options>
+            <option text="" value="" element_position="0"/>
+            <option text="NEVER - Did not apply to me at all" value="0" element_position="1"/>
+            <option text="SOMETIMES - Applied to me to some degree or some of the time" value="1" element_position="2"/>
+            <option text="OFTEN - Applied to me to a considerable degree or a good part of time" value="2" element_position="3"/>
+            <option text="ALMOST ALWAYS - Applied to me very much or most of the time" value="3" element_position="4"/>
+          </options>
+        </element>
+        <element element_type="select" name="q20" title="Q20: I felt scared without any good reason." element_position="19" required="true" show_in_reports="true" onchange="" read_only="false">
+          <options>
+            <option text="" value="" element_position="0"/>
+            <option text="NEVER - Did not apply to me at all" value="0" element_position="1"/>
+            <option text="SOMETIMES - Applied to me to some degree or some of the time" value="1" element_position="2"/>
+            <option text="OFTEN - Applied to me to a considerable degree or a good part of time" value="2" element_position="3"/>
+            <option text="ALMOST ALWAYS - Applied to me very much or most of the time" value="3" element_position="4"/>
+          </options>
+        </element>
+        <element element_type="select" name="q21" title="Q21: I felt that life was meaningless." element_position="20" required="true" show_in_reports="true" onchange="" read_only="false">
+          <options>
+            <option text="" value="" element_position="0"/>
+            <option text="NEVER - Did not apply to me at all" value="0" element_position="1"/>
+            <option text="SOMETIMES - Applied to me to some degree or some of the time" value="1" element_position="2"/>
+            <option text="OFTEN - Applied to me to a considerable degree or a good part of time" value="2" element_position="3"/>
+            <option text="ALMOST ALWAYS - Applied to me very much or most of the time" value="3" element_position="4"/>
+          </options>
+        </element>
+        <element element_type="calculation" name="stress_score" title="" element_position="21" format="integer" show_in_reports="true">
+          <description>number(q1)+number(q6)+number(q8)+number(q11)+number(q12)+number(q14)+number(q18)</description>
+          <options>
+          </options>
+        </element>
+        <element element_type="calculation" name="anxiety_score" title="" element_position="22" format="integer" show_in_reports="true">
+          <description>number(q2)+number(q4)+number(q7)+number(q9)+number(q15)+number(q19)+number(q20)</description>
+          <options>
+          </options>
+        </element>
+        <element element_type="calculation" name="depression_score" title="" element_position="23" format="integer" show_in_reports="true">
+          <description>number(q3)+number(q5)+number(q10)+number(q13)+number(q16)+number(q17)+number(q21)</description>
+          <options>
+          </options>
+        </element>
+      </children>
+    </element>
+  </elements>
+  <assessment_merge_forms>
+  </assessment_merge_forms>
+</form>
