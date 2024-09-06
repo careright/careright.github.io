@@ -1,0 +1,115 @@
+<?xml version="1.0" ?>
+<xsl:stylesheet
+    version="1.0"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:fo="http://www.w3.org/1999/XSL/Format"
+    xmlns:hsqueue="xalan://com.healthsolve.xsl.MessageQueue">
+
+  <xsl:template match="/patient">
+    <fo:root>
+      <xsl:call-template name="build-master-page"/>
+      <fo:page-sequence master-reference="SD99010">
+        <fo:flow flow-name="xsl-region-body">
+          <xsl:call-template name="patient-label-data"/>
+        </fo:flow>
+      </fo:page-sequence>
+    </fo:root>
+  </xsl:template>
+
+  <!-- sets up the overall page dimensions -->
+  <xsl:template name="build-master-page">
+    <!-- set up the page for A4 portrait -->
+    <fo:layout-master-set>
+      <fo:simple-page-master
+          master-name="SD99010"
+          page-height="24mm"
+          page-width="255mm"
+		  margin-left="150mm">
+        <fo:region-body/>
+      </fo:simple-page-master>
+    </fo:layout-master-set>
+  </xsl:template>
+
+  <!-- generates the label key-value pairs -->
+  <xsl:template name="patient-label-data">
+    <fo:table>
+      <fo:table-column column-width="20mm"/>
+      <fo:table-column column-width="85mm"/>
+
+      <fo:table-body>
+
+		<fo:table-row>
+         <fo:table-cell>
+             <fo:block font-size="10pt" font-weight="bold" font-family="arial">
+                Name:
+             </fo:block>
+          </fo:table-cell>
+          <fo:table-cell>
+            <fo:block font-size="10pt" font-family="arial">
+              <fo:wrapper text-transform="uppercase">
+			<xsl:value-of select="family_name"/>
+	     </fo:wrapper>
+             &#160;<xsl:value-of select="given_name"/>&#160;
+             <xsl:value-of select="middle_name"/>
+            </fo:block>
+          </fo:table-cell>
+         </fo:table-row>
+		  
+		<xsl:call-template name="patient-label-row">
+          <xsl:with-param name="label">DOB</xsl:with-param>
+          <xsl:with-param name="text" select="date_of_birth"/>
+        </xsl:call-template>
+		  
+        <xsl:call-template name="patient-label-row">
+          <xsl:with-param name="label">MRN</xsl:with-param>
+          <xsl:with-param name="text" select="mrn"/>
+        </xsl:call-template>
+
+        <fo:table-row>
+         <fo:table-cell>
+          <fo:block font-size="10pt" font-weight="bold" font-family="arial">
+            Sex:
+          </fo:block>
+          </fo:table-cell>
+          <fo:table-cell>
+            <fo:block font-size="10pt" font-family="arial">
+            <xsl:value-of select="gender"/>
+			<!-- This is for the ATSI -->
+			<!-- <fo:inline padding-left='20mm' padding-right='2mm' font-weight="bold">ATSI:</fo:inline> -->
+			<!-- <fo:inline font-weight="normal" >Y</fo:inline> -->  	
+            </fo:block>
+          </fo:table-cell>
+        </fo:table-row>
+		  
+		<!--  This is where allergies would go -->	  
+        <xsl:call-template name="patient-label-row">
+         <xsl:with-param name="label">Allergies</xsl:with-param>
+		 <xsl:with-param name="text" select="single_line_active_allergies"/>	
+         </xsl:call-template>
+
+      </fo:table-body>
+    </fo:table>
+  </xsl:template>
+
+  <!-- displays a key-value pair -->
+  <xsl:template name="patient-label-row">
+    <xsl:param name="label"/>
+    <xsl:param name="text"/>
+
+    <fo:table-row>
+      <fo:table-cell>
+        <fo:block font-size="10pt" font-weight="bold" font-family="arial">			
+          <xsl:value-of select="$label"/>:
+        </fo:block>
+      </fo:table-cell>
+      <fo:table-cell>
+        <fo:block font-size="10pt"  font-family="arial">
+          <xsl:value-of select="$text"/>
+        </fo:block>
+      </fo:table-cell>
+    </fo:table-row>
+  </xsl:template>
+
+</xsl:stylesheet>
+
+
