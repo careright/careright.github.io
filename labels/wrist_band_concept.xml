@@ -1,0 +1,120 @@
+<?xml version="1.0" ?>
+<xsl:stylesheet
+    version="1.0"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:fo="http://www.w3.org/1999/XSL/Format"
+    xmlns:hsqueue="xalan://com.healthsolve.xsl.MessageQueue">
+
+  <xsl:template match="/patient">
+    <fo:root>
+      <xsl:call-template name="build-master-page"/>
+      <fo:page-sequence master-reference="SD99010">
+        <fo:flow flow-name="xsl-region-body">
+          <xsl:call-template name="layout-lable"/>
+        </fo:flow>
+      </fo:page-sequence>
+    </fo:root>
+  </xsl:template>
+
+  <!-- sets up the overall page dimensions -->
+  <xsl:template name="build-master-page">
+    <!-- set up the page for A4 portrait -->
+    <fo:layout-master-set>
+      <fo:simple-page-master
+          master-name="SD99010"
+          page-height="28mm"
+          page-width="89mm"
+          margin-top="1mm"
+          margin-bottom="1mm"
+          margin-left="1mm"
+          margin-right="1mm">
+        <fo:region-body/>
+      </fo:simple-page-master>
+    </fo:layout-master-set>
+  </xsl:template>
+
+  <!-- generates the label layout - data on left, picture on right -->
+  <xsl:template name="layout-lable">
+    <fo:table>
+      <fo:table-column column-width="60mm"/>
+      <fo:table-column column-width="27mm"/>
+      <fo:table-body>
+        <fo:table-row>
+          <fo:table-cell padding-top="1mm" padding-bottom="1mm" padding-left="4mm">
+            <fo:block>
+              <xsl:call-template name="patient-label-data"/>
+            </fo:block>
+          </fo:table-cell>
+          <fo:table-cell display-align="left" padding-top="1mm" padding-bottom="1mm">
+            <fo:block-container position="absolute">
+              <fo:block>
+                <fo:external-graphic
+                    src="{picture_path}"
+                    content-width="scale-to-fit"
+                    content-height="100%"
+                    width="100%"
+                    scaling="uniform"/>
+              </fo:block>
+            </fo:block-container>
+          </fo:table-cell>
+        </fo:table-row>
+      </fo:table-body>
+    </fo:table>
+  </xsl:template>
+
+  <!-- generates the label key-value pairs -->
+  <xsl:template name="patient-label-data">
+    <fo:table>
+      <fo:table-column column-width="20mm"/>
+      <fo:table-column column-width="50mm"/>
+
+      <fo:table-body>
+
+        <xsl:call-template name="patient-label-row">
+          <xsl:with-param name="label">Name</xsl:with-param>
+          <xsl:with-param name="text" select="display_name"/>
+        </xsl:call-template>
+
+                <xsl:call-template name="patient-label-row">
+          <xsl:with-param name="label">DOB</xsl:with-param>
+          <xsl:with-param name="text" select="date_of_birth"/>
+        </xsl:call-template>
+
+        <xsl:call-template name="patient-label-row">
+          <xsl:with-param name="label">MRN</xsl:with-param>
+          <xsl:with-param name="text" select="mrn"/>
+        </xsl:call-template>
+
+
+
+        <xsl:call-template name="patient-label-row">
+          <xsl:with-param name="label">Gender</xsl:with-param>
+          <xsl:with-param name="text" select="gender"/>
+        </xsl:call-template>
+
+
+
+      </fo:table-body>
+    </fo:table>
+  </xsl:template>
+
+  <!-- displays a key-value pair -->
+  <xsl:template name="patient-label-row">
+    <xsl:param name="label"/>
+    <xsl:param name="text"/>
+
+    <fo:table-row>
+      <fo:table-cell>
+        <fo:block font-size="12pt" font-weight="bold">
+          <xsl:value-of select="$label"/>
+        </fo:block>
+      </fo:table-cell>
+      <fo:table-cell>
+        <fo:block font-size="12pt">
+          <xsl:value-of select="$text"/>
+        </fo:block>
+      </fo:table-cell>
+    </fo:table-row>
+  </xsl:template>
+
+</xsl:stylesheet>
