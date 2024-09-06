@@ -1,0 +1,172 @@
+<?xml version="1.0" ?>
+<xsl:stylesheet
+    version="1.0"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:fo="http://www.w3.org/1999/XSL/Format"
+    xmlns:hsqueue="xalan://com.healthsolve.xsl.MessageQueue">
+
+  <xsl:template match="/patient">
+    <fo:root>
+      <xsl:call-template name="build-master-page"/>
+      <fo:page-sequence master-reference="A4-Avery-L7162">
+        <fo:flow flow-name="xsl-region-body">
+          <xsl:call-template name="layout-table"/>
+        </fo:flow>
+      </fo:page-sequence>
+    </fo:root>
+  </xsl:template>
+
+  <!-- sets up the overall page dimensions -->
+  <xsl:template name="build-master-page">
+    <!-- set up the page for A4 portrait -->
+    <fo:layout-master-set>
+      <fo:simple-page-master
+          master-name="A4-Avery-L7162"
+          page-height="297mm"
+          page-width="210mm"
+          margin-top="12.5mm"
+          margin-bottom="12.5mm"
+          margin-left="4.65mm"
+          margin-right="4.65mm">
+        <fo:region-body/>
+      </fo:simple-page-master>
+    </fo:layout-master-set>
+  </xsl:template>
+
+  <!-- generates table to hold the 2x8 label grid -->
+  <xsl:template name="layout-table">
+    <fo:block>
+      <fo:table>
+        <fo:table-column column-width="99.1mm"/>
+        <fo:table-column column-width="2.5mm"/>
+        <fo:table-column column-width="99.1mm"/>
+        <fo:table-body>
+          <xsl:call-template name="layout-table-row"/>
+        </fo:table-body>
+      </fo:table>
+    </fo:block>
+  </xsl:template>
+
+  <!-- generates 8 rows, each containing 2 labels -->
+  <xsl:template name="layout-table-row">
+    <xsl:param name="iteration" select="8"/>
+
+    <fo:table-row height="34mm" display-align="center">
+      <!-- left column --><fo:table-cell><xsl:call-template name="layout-lable"/></fo:table-cell>
+      <!-- (spacer) --><fo:table-cell><fo:block/></fo:table-cell>
+      <!-- right column --><fo:table-cell><xsl:call-template name="layout-lable"/></fo:table-cell>
+    </fo:table-row>
+
+    <!-- recursively add additional label rows -->
+    <xsl:if test="$iteration > 1">
+      <xsl:call-template name="layout-table-row">
+        <xsl:with-param name="iteration" select="$iteration - 1"/>
+      </xsl:call-template>
+    </xsl:if>
+  </xsl:template>
+
+   <!-- generates the label layout - data on left, picture on right -->
+  <xsl:template name="layout-lable">
+    <fo:table>
+      <fo:table-column column-width="70mm"/>
+      <fo:table-column column-width="29.1mm"/>
+      <fo:table-body>
+        <fo:table-row>
+          <fo:table-cell padding-top="1mm" padding-bottom="1mm" padding-left="4mm">
+            <fo:block>
+              <xsl:call-template name="patient-label-data"/>
+            </fo:block>
+          </fo:table-cell>
+          <fo:table-cell display-align="left" padding-top="1mm" padding-bottom="1mm">
+            <fo:block-container position="absolute">
+              <fo:block>
+                
+              </fo:block>
+            </fo:block-container>
+          </fo:table-cell>
+        </fo:table-row>
+      </fo:table-body>
+    </fo:table>
+  </xsl:template>
+
+
+  <!-- generates the label key-value pairs -->
+  <xsl:template name="patient-label-data">
+    <fo:table>
+      <fo:table-column column-width="20mm"/>
+      <fo:table-column column-width="50mm"/>
+
+      <fo:table-body>
+
+        <xsl:call-template name="patient-label-row">
+          <xsl:with-param name="label">MRN</xsl:with-param>
+          <xsl:with-param name="text" select="mrn"/>
+        </xsl:call-template>
+ 
+         <fo:table-row>
+         <fo:table-cell>
+             <fo:block font-size="8pt" font-weight="bold">
+                Name
+             </fo:block>
+          </fo:table-cell>
+          <fo:table-cell>
+            <fo:block font-size="8pt">
+              <fo:wrapper text-transform="uppercase">
+			<xsl:value-of select="family_name"/>
+	     </fo:wrapper>
+             &#160;<xsl:value-of select="given_name"/>&#160;
+             <xsl:value-of select="middle_name"/>
+            </fo:block>
+          </fo:table-cell>
+         </fo:table-row>
+
+        <xsl:call-template name="patient-label-row">
+          <xsl:with-param name="label">DOB</xsl:with-param>
+          <xsl:with-param name="text">
+             <xsl:value-of select="date_of_birth"/>
+             &#160;(<xsl:value-of select="age_in_words"/>)
+          </xsl:with-param>
+        </xsl:call-template>
+
+        <xsl:call-template name="patient-label-row">
+          <xsl:with-param name="label">Gender</xsl:with-param>
+          <xsl:with-param name="text" select="gender"/>
+        </xsl:call-template>
+
+        <xsl:call-template name="patient-label-row">
+          <xsl:with-param name="label">Address</xsl:with-param>
+          <xsl:with-param name="text" select="home_address/display_address"/>
+        </xsl:call-template>
+
+        <xsl:call-template name="patient-label-row">
+          <xsl:with-param name="label">Medicare</xsl:with-param>
+          <xsl:with-param name="text">
+             <xsl:value-of select="medicare_number"/>
+          &#160;(<xsl:value-of select="medicare_irn"/>)
+         </xsl:with-param>
+        </xsl:call-template>
+
+      </fo:table-body>
+    </fo:table>
+  </xsl:template>
+
+  <!-- displays a key-value pair -->
+  <xsl:template name="patient-label-row">
+    <xsl:param name="label"/>
+    <xsl:param name="text"/>
+
+    <fo:table-row>
+      <fo:table-cell>
+        <fo:block font-size="8pt" font-weight="bold">
+          <xsl:value-of select="$label"/>
+        </fo:block>
+      </fo:table-cell>
+      <fo:table-cell>
+        <fo:block font-size="8pt">
+          <xsl:value-of select="$text"/>
+        </fo:block>
+      </fo:table-cell>
+    </fo:table-row>
+  </xsl:template>
+
+</xsl:stylesheet>
