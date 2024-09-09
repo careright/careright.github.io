@@ -19,6 +19,7 @@
   <xsl:template match="/">
     <fo:root>
       <fo:layout-master-set>
+        <!-- Define the printing setup. In this case, we are targeting standard A4 - see https://en.wikipedia.org/wiki/Paper_size -->
         <fo:simple-page-master master-name="simple" page-height="210mm" page-width="297mm"
                                margin-top="5mm" margin-bottom="8mm" margin-left="10mm" margin-right="10mm">
           <fo:region-body region-name="xsl-region-body" margin-bottom="5mm" margin-top="50mm"/>
@@ -49,6 +50,7 @@
 
   <xsl:template name="layout-header">
     <fo:block text-align="center" width="190mm">
+      <!-- Link to a header image, uploaded via Admin > System Images. Define the width and height for the orientation of your paper -->
       <fo:external-graphic src="system_images/LH" content-width="190mm" content-height="30mm" />
     </fo:block>
     <fo:block text-align="center" font-size="16pt" font-weight="bold">APPOINTMENT SCHEDULE</fo:block>
