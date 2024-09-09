@@ -6,5 +6,5 @@ Your CareRight installation contains a number of default templates; each may be 
 
 Related manuals:
 
-* https://careright.knowledgeowl.com/help/default-printing-templates
-* https://github.com/careright/careright.github.io/wiki/XSL%E2%80%90FO-Template-Editing
+* [KnowledgeOwl - Default Printing Templates](https://careright.knowledgeowl.com/help/default-printing-templates)
+* [XSL-FO Template Editing](https://github.com/careright/careright.github.io/wiki/XSL%E2%80%90FO-Template-Editing)
