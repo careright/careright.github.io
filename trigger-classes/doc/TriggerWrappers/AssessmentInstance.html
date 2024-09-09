@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: TriggerWrappers::AssessmentInstance
+  
+    &mdash; Documentation by YARD 0.9.34
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" />
+
+<script type="text/javascript">
+  pathId = "TriggerWrappers::AssessmentInstance";
+  relpath = '../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../_index.html">Index (A)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../TriggerWrappers.html" title="TriggerWrappers (module)">TriggerWrappers</a></span></span>
+     &raquo; 
+    <span class="title">AssessmentInstance</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Class: TriggerWrappers::AssessmentInstance
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName"><span class='object_link'><a href="ActiveRecordBase.html" title="TriggerWrappers::ActiveRecordBase (class)">ActiveRecordBase</a></span></span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next"><span class='object_link'><a href="Base.html" title="TriggerWrappers::Base (class)">Base</a></span></li>
+          
+            <li class="next"><span class='object_link'><a href="ActiveRecordBase.html" title="TriggerWrappers::ActiveRecordBase (class)">ActiveRecordBase</a></span></li>
+          
+            <li class="next">TriggerWrappers::AssessmentInstance</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>app/models/trigger_wrappers/assessment_instance.rb</dd>
+  </dl>
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Represents a specific instance of an assessment; that is, the answers</p>
+
+<p>In assessment trigger contexts, the predefined variable <code>assessment</code> which is made available to trigger scripts is an object of this class.</p>
+
+<p>Element values are available as properties on this object, which can be used to get or set their value.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Getters and Setters</p>
+</div></p>
+      
+      <pre class="example code"><code>// Assuming &quot;yes_no&quot; is a boolean element on the assessment
+assessment.yes_no // =&gt; true or false
+assessment.yes_no = true
+
+// You can also use an indexing notation if you have the field name in a string
+assessment[&#39;yes_no&#39;] // =&gt; true or false
+assessment[&#39;yes_no&#39;] = true</code></pre>
+    
+  </div>
+
+
+</div>
+
+
+
+
+
+
+  
+    <h2>
+      Class Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#merge_form_alias-class_method" title="merge_form_alias (class method)">.<strong>merge_form_alias</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>in merge forms, assessment instance classes are referred to as “assessment”.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#[]-instance_method" title="#[] (instance method)">#<strong>[]</strong>(attr)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of an element on this assessment instance.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#[]=-instance_method" title="#[]= (instance method)">#<strong>[]=</strong>(attr, value)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Replaces the value of an element on this assessment instance.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#change_status-instance_method" title="#change_status (instance method)">#<strong>change_status</strong>(new_status)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Force the assessment instance to a different status, ie Approved or Draft.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#has_element-instance_method" title="#has_element (instance method)">#<strong>has_element</strong>(attr)  &#x21d2; Boolean </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns true if the assessment has an element of this name.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">#<strong>initialize</strong>(context, rec)  &#x21d2; AssessmentInstance </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>A new instance of AssessmentInstance.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#print-instance_method" title="#print (instance method)">#<strong>print</strong>(merge_form_name, variables = {})  &#x21d2; Boolean </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Triggers the printing of a merge form.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#to_s-instance_method" title="#to_s (instance method)">#<strong>to_s</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#trigger_link_prompt-instance_method" title="#trigger_link_prompt (instance method)">#<strong>trigger_link_prompt</strong>(script_name, prompt, default, metadata, label)  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Generates a clickable link which optionally prompts a user for a string then triggers a manual script event.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#update_values-instance_method" title="#update_values (instance method)">#<strong>update_values</strong>(values_object)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Replaces multiple elements on the assessment instance at once.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="ActiveRecordBase.html" title="TriggerWrappers::ActiveRecordBase (class)">ActiveRecordBase</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="ActiveRecordBase.html#add_error-instance_method" title="TriggerWrappers::ActiveRecordBase#add_error (method)">#add_error</a></span>, <span class='object_link'><a href="ActiveRecordBase.html#box_layout-instance_method" title="TriggerWrappers::ActiveRecordBase#box_layout (method)">#box_layout</a></span>, <span class='object_link'><a href="ActiveRecordBase.html#class_name-instance_method" title="TriggerWrappers::ActiveRecordBase#class_name (method)">#class_name</a></span>, <span class='object_link'><a href="ActiveRecordBase.html#error_messages-instance_method" title="TriggerWrappers::ActiveRecordBase#error_messages (method)">#error_messages</a></span>, <span class='object_link'><a href="ActiveRecordBase.html#errors-instance_method" title="TriggerWrappers::ActiveRecordBase#errors (method)">#errors</a></span>, <span class='object_link'><a href="ActiveRecordBase.html#id-instance_method" title="TriggerWrappers::ActiveRecordBase#id (method)">#id</a></span>, <span class='object_link'><a href="ActiveRecordBase.html#inspect-instance_method" title="TriggerWrappers::ActiveRecordBase#inspect (method)">#inspect</a></span>, <span class='object_link'><a href="ActiveRecordBase.html#is_new-instance_method" title="TriggerWrappers::ActiveRecordBase#is_new (method)">#is_new</a></span>, <span class='object_link'><a href="ActiveRecordBase.html#method_missing-instance_method" title="TriggerWrappers::ActiveRecordBase#method_missing (method)">#method_missing</a></span>, <span class='object_link'><a href="ActiveRecordBase.html#respond_to_missing%3F-instance_method" title="TriggerWrappers::ActiveRecordBase#respond_to_missing? (method)">#respond_to_missing?</a></span>, <span class='object_link'><a href="ActiveRecordBase.html#save-instance_method" title="TriggerWrappers::ActiveRecordBase#save (method)">#save</a></span>, <span class='object_link'><a href="ActiveRecordBase.html#strip_diagnosis_procedure_code-instance_method" title="TriggerWrappers::ActiveRecordBase#strip_diagnosis_procedure_code (method)">#strip_diagnosis_procedure_code</a></span></p>
+
+  
+  
+  
+  
+  
+  <div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    #<strong>initialize</strong>(context, rec)  &#x21d2; <tt><span class='object_link'><a href="" title="TriggerWrappers::AssessmentInstance (class)">AssessmentInstance</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns a new instance of AssessmentInstance.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+</div>
+  
+</div>
+<div id="method_missing_details" class="method_details_list">
+  <h2>Dynamic Method Handling</h2>
+  <p class="notice super">
+    This class handles dynamic methods through the <tt>method_missing</tt> method
+    
+      in the class <span class='object_link'><a href="ActiveRecordBase.html#method_missing-instance_method" title="TriggerWrappers::ActiveRecordBase#method_missing (method)">TriggerWrappers::ActiveRecordBase</a></span>
+    
+  </p>
+  
+</div>
+
+
+  <div id="class_method_details" class="method_details_list">
+    <h2>Class Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="merge_form_alias-class_method">
+  
+    .<strong>merge_form_alias</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>in merge forms, assessment instance classes are referred to as “assessment”</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+</div>
+    
+  </div>
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="[]-instance_method">
+  
+    #<strong>[]</strong>(attr)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of an element on this assessment instance.  Accessing an element which doesn&#39;t exist will raise an error.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Object</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The type depends on the type of the element</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="[]=-instance_method">
+  
+    #<strong>[]=</strong>(attr, value)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Replaces the value of an element on this assessment instance.  Accessing an attribute which doesn&#39;t exist will raise an error.</p>
+
+<p>The new value should be the correct type for the element.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="change_status-instance_method">
+  
+    #<strong>change_status</strong>(new_status)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Force the assessment instance to a different status, ie Approved or Draft.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="has_element-instance_method">
+  
+    #<strong>has_element</strong>(attr)  &#x21d2; <tt>Boolean</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns true if the assessment has an element of this name.</p>
+
+<p>This can be used to avoid an error that would otherwise occur when accessing a non-existing element.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Read a value only if the element exists on the assessment</p>
+</div></p>
+      
+      <pre class="example code"><code>var test
+if (assessment.has_element(&#39;test&#39;)) {
+  test = assessment.test
+} else {
+  console.log(&#39;No test element on this assessment&#39;)
+}</code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>attr</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>name of the element</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>true if the named element exists</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="print-instance_method">
+  
+    #<strong>print</strong>(merge_form_name, variables = {})  &#x21d2; <tt>Boolean</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Triggers the printing of a merge form.</p>
+
+<p>A merge form (PDF Template) must be defined on the assessment (refer to the System Administration manual for how to do this).</p>
+
+<p>If <code>variables</code> is supplied then these will be supplied to the PDF template to populate the fields of the PDF.  These will be merged with the default fields created and can override existing values if the names match.</p>
+
+<p>This method will return true if everything looks good, but the actual printing action will not start until the control returns to the user&#39;s browser.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Print without overrides</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_assessment'>assessment</span><span class='period'>.</span><span class='id identifier rubyid_print'>print</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>My Template</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span></code></pre>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Print and override the patient&#39;s first name</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_assessment'>assessment</span><span class='period'>.</span><span class='id identifier rubyid_print'>print</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>My Template</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='lbrace'>{</span> <span class='label'>patient:</span> <span class='lbrace'>{</span> <span class='label'>given_name:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Mary</span><span class='tstring_end'>&#39;</span></span> <span class='rbrace'>}</span> <span class='rbrace'>}</span><span class='rparen'>)</span></code></pre>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Print and override first name, an assessment element, and provide a custom field value</p>
+</div></p>
+      
+      <pre class="example code"><code>assessment.print(&#39;My Template&#39;, {
+  patient: { given_name: &#39;Mary&#39; },
+  assessment: { my_element: &#39;New Value&#39; },
+  my_namespace: { days_since_last_accident: 10 }
+})
+
+// Resulting in the following fields being supported in the PDF template:
+// * patient[given_name]
+// * assessment[my_element]
+// * my_namespace[days_since_last_accident]</code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>merge_form_name</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>name of the merge form</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>variables</span>
+      
+      
+        <span class='type'>(<tt>Object</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>associated array of override values</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>true if the printing action will start</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="to_s-instance_method">
+  
+    #<strong>to_s</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="trigger_link_prompt-instance_method">
+  
+    #<strong>trigger_link_prompt</strong>(script_name, prompt, default, metadata, label)  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Generates a clickable link which optionally prompts a user for a string then triggers a manual script event.  The retutned HTML is intended to be included inside a read-only rich text field.</p>
+
+<p>If prompt is a string, the user will be displayed a dialog asking for input.</p>
+
+<p>If prompt is null, the user will not be prompted and the trigger event will be executed immediately.</p>
+
+<p>The trigger class must be attached to this assessment and be published and not archived.  The trigger script must be active and of type <code>Manual Script</code>.</p>
+
+<p>The script will have available the additional variables <code>metadata</code>, set to the corresponding parameter and <code>answer</code> set to what the user entered into the prompt.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>script_name</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>prompt</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>default</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>metadata</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>label</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>HTML code for a trigger link</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="update_values-instance_method">
+  
+    #<strong>update_values</strong>(values_object)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Replaces multiple elements on the assessment instance at once.</p>
+
+<p>The associate array parameter must have keys matching element names.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Updating multiple elements</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_assessment'>assessment</span><span class='period'>.</span><span class='id identifier rubyid_update_values'>update_values</span><span class='lparen'>(</span><span class='lbrace'>{</span> <span class='label'>yes_no:</span> <span class='kw'>true</span><span class='comma'>,</span> <span class='label'>text_field:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Hello</span><span class='tstring_end'>&#39;</span></span> <span class='rbrace'>}</span><span class='rparen'>)</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>values_object</span>
+      
+      
+        <span class='type'>(<tt>Object</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>an associative array containing the element name and new value in pairs</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Mon Sep  9 11:24:42 2024 by
+  
+</div>
+
+    </div>
+  </body>
+</html>

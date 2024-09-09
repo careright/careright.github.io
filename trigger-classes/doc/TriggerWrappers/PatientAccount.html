@@ -1,0 +1,2061 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: TriggerWrappers::PatientAccount
+  
+    &mdash; Documentation by YARD 0.9.34
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" />
+
+<script type="text/javascript">
+  pathId = "TriggerWrappers::PatientAccount";
+  relpath = '../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../_index.html">Index (P)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../TriggerWrappers.html" title="TriggerWrappers (module)">TriggerWrappers</a></span></span>
+     &raquo; 
+    <span class="title">PatientAccount</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Class: TriggerWrappers::PatientAccount
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName"><span class='object_link'><a href="ActiveRecordBase.html" title="TriggerWrappers::ActiveRecordBase (class)">ActiveRecordBase</a></span></span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next"><span class='object_link'><a href="Base.html" title="TriggerWrappers::Base (class)">Base</a></span></li>
+          
+            <li class="next"><span class='object_link'><a href="ActiveRecordBase.html" title="TriggerWrappers::ActiveRecordBase (class)">ActiveRecordBase</a></span></li>
+          
+            <li class="next">TriggerWrappers::PatientAccount</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>app/models/trigger_wrappers/patient_account.rb</dd>
+  </dl>
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Represents a patient account record.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#account_flag-instance_method" title="#account_flag (instance method)">#<strong>account_flag</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the account&#39;s flag.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#account_flag=-instance_method" title="#account_flag= (instance method)">#<strong>account_flag=</strong>(_name)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Raises an error - setting a flag on the patient account directly is not allowed.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#address_invoice-instance_method" title="#address_invoice (instance method)">#<strong>address_invoice</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns an address of the Guarantor if account has a guarantor.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#allocate_unallocated_credits-instance_method" title="#allocate_unallocated_credits (instance method)">#<strong>allocate_unallocated_credits</strong>(options = {})  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Allocates unallocated credits to line items on the same account.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#build_invoice-instance_method" title="#build_invoice (instance method)">#<strong>build_invoice</strong>(medical_provider, service_location, items, options = {})  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#build_receipt-instance_method" title="#build_receipt (instance method)">#<strong>build_receipt</strong>(location, transactions, options = nil)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#create_estimate-instance_method" title="#create_estimate (instance method)">#<strong>create_estimate</strong>(medical_provider, service_location, items, options = {})  &#x21d2; Estimate, null </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Creates an estimate attached to this patient account.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#create_invoice-instance_method" title="#create_invoice (instance method)">#<strong>create_invoice</strong>(medical_provider, service_location, items, options = {})  &#x21d2; Invoice, null </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Creates an invoice attached to this patient account.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#create_opening_balance-instance_method" title="#create_opening_balance (instance method)">#<strong>create_opening_balance</strong>(debit, credit, options = {})  &#x21d2; Statement, null </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Creates an opening balance statement on this account.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#create_receipt-instance_method" title="#create_receipt (instance method)">#<strong>create_receipt</strong>(location, transactions, options = nil)  &#x21d2; Receipt, null </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Creates a receipt attached this this patient account.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#date_of_first_invoice-instance_method" title="#date_of_first_invoice (instance method)">#<strong>date_of_first_invoice</strong>(_fake_param_for_ruby_racer)  &#x21d2; Date, null </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the earliest date raised of any invoice on this account.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#fund_label_invoice-instance_method" title="#fund_label_invoice (instance method)">#<strong>fund_label_invoice</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the string <code>Member No</code> if this patient account is for a health fund.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#fund_value_invoice-instance_method" title="#fund_value_invoice (instance method)">#<strong>fund_value_invoice</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the patient&#39;s fund membership number if this patient account is for a health fund.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#guarantor-instance_method" title="#guarantor (instance method)">#<strong>guarantor</strong>  &#x21d2; Guarantor, null </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the guarantor associated with this account.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#has_unallocated_credits-instance_method" title="#has_unallocated_credits (instance method)">#<strong>has_unallocated_credits</strong>(_fake_param_for_ruby_racer)  &#x21d2; Boolean </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns true if the account has any unallocated credits.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#is_held-instance_method" title="#is_held (instance method)">#<strong>is_held</strong>  &#x21d2; Boolean </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns true if this account is flagged <code>Hold from statements</code>.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#label_1_invoice-instance_method" title="#label_1_invoice (instance method)">#<strong>label_1_invoice</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns either <code>DVA Number</code> or <code>Fund</code> depending on the patient account type.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#location-instance_method" title="#location (instance method)">#<strong>location</strong>  &#x21d2; Location </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the location associated with this account.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#name_invoice-instance_method" title="#name_invoice (instance method)">#<strong>name_invoice</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the Guarantor name if account has a guarantor.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#opening_balances-instance_method" title="#opening_balances (instance method)">#<strong>opening_balances</strong>  &#x21d2; Array </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns an array of Opening Balance type statements on this account.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#provider-instance_method" title="#provider (instance method)">#<strong>provider</strong>  &#x21d2; Provider </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the provider associated with this account.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#value_1_invoice-instance_method" title="#value_1_invoice (instance method)">#<strong>value_1_invoice</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the patient&#39;s DVA number, or the guarantor name depending on the patient account type.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#write_on_or_off_balance-instance_method" title="#write_on_or_off_balance (instance method)">#<strong>write_on_or_off_balance</strong>(options = {})  &#x21d2; Statement, ... </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Write on or off an account, so that its new balance is $0.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="ActiveRecordBase.html" title="TriggerWrappers::ActiveRecordBase (class)">ActiveRecordBase</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="ActiveRecordBase.html#[]-instance_method" title="TriggerWrappers::ActiveRecordBase#[] (method)">#[]</a></span>, <span class='object_link'><a href="ActiveRecordBase.html#[]=-instance_method" title="TriggerWrappers::ActiveRecordBase#[]= (method)">#[]=</a></span>, <span class='object_link'><a href="ActiveRecordBase.html#add_error-instance_method" title="TriggerWrappers::ActiveRecordBase#add_error (method)">#add_error</a></span>, <span class='object_link'><a href="ActiveRecordBase.html#box_layout-instance_method" title="TriggerWrappers::ActiveRecordBase#box_layout (method)">#box_layout</a></span>, <span class='object_link'><a href="ActiveRecordBase.html#class_name-instance_method" title="TriggerWrappers::ActiveRecordBase#class_name (method)">#class_name</a></span>, <span class='object_link'><a href="ActiveRecordBase.html#error_messages-instance_method" title="TriggerWrappers::ActiveRecordBase#error_messages (method)">#error_messages</a></span>, <span class='object_link'><a href="ActiveRecordBase.html#errors-instance_method" title="TriggerWrappers::ActiveRecordBase#errors (method)">#errors</a></span>, <span class='object_link'><a href="ActiveRecordBase.html#id-instance_method" title="TriggerWrappers::ActiveRecordBase#id (method)">#id</a></span>, <span class='object_link'><a href="ActiveRecordBase.html#initialize-instance_method" title="TriggerWrappers::ActiveRecordBase#initialize (method)">#initialize</a></span>, <span class='object_link'><a href="ActiveRecordBase.html#inspect-instance_method" title="TriggerWrappers::ActiveRecordBase#inspect (method)">#inspect</a></span>, <span class='object_link'><a href="ActiveRecordBase.html#is_new-instance_method" title="TriggerWrappers::ActiveRecordBase#is_new (method)">#is_new</a></span>, <span class='object_link'><a href="ActiveRecordBase.html#method_missing-instance_method" title="TriggerWrappers::ActiveRecordBase#method_missing (method)">#method_missing</a></span>, <span class='object_link'><a href="ActiveRecordBase.html#respond_to_missing%3F-instance_method" title="TriggerWrappers::ActiveRecordBase#respond_to_missing? (method)">#respond_to_missing?</a></span>, <span class='object_link'><a href="ActiveRecordBase.html#save-instance_method" title="TriggerWrappers::ActiveRecordBase#save (method)">#save</a></span>, <span class='object_link'><a href="ActiveRecordBase.html#strip_diagnosis_procedure_code-instance_method" title="TriggerWrappers::ActiveRecordBase#strip_diagnosis_procedure_code (method)">#strip_diagnosis_procedure_code</a></span>, <span class='object_link'><a href="ActiveRecordBase.html#to_s-instance_method" title="TriggerWrappers::ActiveRecordBase#to_s (method)">#to_s</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="Base.html" title="TriggerWrappers::Base (class)">Base</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Base.html#initialize-instance_method" title="TriggerWrappers::Base#initialize (method)">#initialize</a></span>, <span class='object_link'><a href="Base.html#to_s-instance_method" title="TriggerWrappers::Base#to_s (method)">#to_s</a></span></p>
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <p class="notice">This class inherits a constructor from <span class='object_link'><a href="ActiveRecordBase.html#initialize-instance_method" title="TriggerWrappers::ActiveRecordBase#initialize (method)">TriggerWrappers::ActiveRecordBase</a></span></p>
+  
+</div>
+<div id="method_missing_details" class="method_details_list">
+  <h2>Dynamic Method Handling</h2>
+  <p class="notice super">
+    This class handles dynamic methods through the <tt>method_missing</tt> method
+    
+      in the class <span class='object_link'><a href="ActiveRecordBase.html#method_missing-instance_method" title="TriggerWrappers::ActiveRecordBase#method_missing (method)">TriggerWrappers::ActiveRecordBase</a></span>
+    
+  </p>
+  
+</div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="account_flag-instance_method">
+  
+    #<strong>account_flag</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the account&#39;s flag.  Returns an empty string if the account doesn&#39;t have a flag.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="account_flag=-instance_method">
+  
+    #<strong>account_flag=</strong>(_name)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Raises an error - setting a flag on the patient account directly is not allowed.  You should use <code>Patient.find_or_create_patient_account</code> to search for an account by flag.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="address_invoice-instance_method">
+  
+    #<strong>address_invoice</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns an address of the Guarantor if account has a guarantor. Returns claimant address if private account and claimant details have been entered. Returns patient address if private account. This is returned on one or two lines.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="allocate_unallocated_credits-instance_method">
+  
+    #<strong>allocate_unallocated_credits</strong>(options = {})  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Allocates unallocated credits to line items on the same account.</p>
+
+<p>This function searches for unallocated credits on the account, and then allocates them to any unpaid line items on the same account, oldest first.</p>
+
+<p>The valid options are: &lt;ul&gt; &lt;li&gt;<code>max</code> (Decimal or String) a maximum amount to allocate. If provided and there is more than <code>max</code> owing, the remaining amount will be left unallocated.  Must be greated than 0.  If not provided, the entire amount of unallocated credit will be allocated, up to the unpaid amount on any line items&lt;/li&gt; &lt;li&gt;<code>overallocate</code> (Boolean) if true and <code>max</code> is also provided, then all unallocated deposits (up to `max`) will be allocated even if this means overallocating a line item.  The allocation will fail if there are no line items available to allocate to.&lt;/li&gt; &lt;/ul&gt;</p>
+
+<p>The return value is an object which should be checked for a result. It will have the following properties: &lt;ul&gt; &lt;li&gt;<code>success</code> A boolean indicating if the process succeeded&lt;/li&gt; &lt;li&gt;<code>amount_paid</code> The amount that was paid down.  This could</p>
+
+<pre class="code ruby"><code class="ruby">be less than &lt;code&gt;max&lt;/code&gt; if the unpaid invoices were less.&lt;/li&gt;
+</code></pre>
+
+<p>&lt;li&gt;<code>error_message</code> If success is false, a description of the</p>
+
+<pre class="code ruby"><code class="ruby">error that occurred&lt;/li&gt;
+</code></pre>
+
+<p>&lt;/ul&gt;</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Allocate unpaid credits on the first patient account, up to $100</p>
+</div></p>
+      
+      <pre class="example code"><code>var account = patient.patient_accounts[0]
+var result = account.allocate_unallocated_credits({ max: &#39;100.00&#39; })
+if (result.success) {
+  console.log(&#39;Success - &#39; + result.amount_paid.as_currency + &#39; was allocated&#39;)
+} else {
+  console.log(&#39;Allocation failed: &#39; + result.error_message)
+}</code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Object</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>see above</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Object</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>see above</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="build_invoice-instance_method">
+  
+    #<strong>build_invoice</strong>(medical_provider, service_location, items, options = {})  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="build_receipt-instance_method">
+  
+    #<strong>build_receipt</strong>(location, transactions, options = nil)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="create_estimate-instance_method">
+  
+    #<strong>create_estimate</strong>(medical_provider, service_location, items, options = {})  &#x21d2; <tt><span class='object_link'><a href="Estimate.html" title="TriggerWrappers::Estimate (class)">Estimate</a></span></tt>, <tt>null</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Creates an estimate attached to this patient account.  Returns a saved estimate with saved line items.</p>
+
+<p>For a description of the items/options parameters, see the <code>create_invoice</code> function.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code>var patient = assessment.patient
+var provider = finder.provider.by_id(1)
+var guarantor = finder.guarantor.by_code(&#39;MC&#39;)
+var location = finder.location.by_name(&#39;ADL&#39;)
+var account = patient.find_or_create_patient_account(location, guarantor, provider)
+var service_location = 2
+var items = new Array
+items.push({ code: &#39;33133&#39;, gl_code: &#39;1&#39;, price: &#39;44.75&#39; })
+items.push({ code: &#39;33100&#39;, gl_code: &#39;2&#39; })
+var options = { referral: &#39;none&#39;, note: &#39;This is a test&#39;, mpr: true }
+var estimate = account.create_estimate(provider, service_location, items, options)</code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>medical_provider</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="MedicalProvider.html" title="TriggerWrappers::MedicalProvider (class)">MedicalProvider</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>service_location</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="ServiceLocation.html" title="TriggerWrappers::ServiceLocation (class)">ServiceLocation</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>items</span>
+      
+      
+        <span class='type'>(<tt>Array</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Object</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Estimate.html" title="TriggerWrappers::Estimate (class)">Estimate</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>null</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>if an error occurred or a parameter is invalid</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="create_invoice-instance_method">
+  
+    #<strong>create_invoice</strong>(medical_provider, service_location, items, options = {})  &#x21d2; <tt><span class='object_link'><a href="Invoice.html" title="TriggerWrappers::Invoice (class)">Invoice</a></span></tt>, <tt>null</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Creates an invoice attached to this patient account.  Returns a saved invoice with saved line items.</p>
+
+<p>The <code>items</code> array is expected to be an array of objects with the following properties.  Each item in this array will be created as a line item on the invoice. &lt;ul&gt; &lt;li&gt;<code>code</code> [String, mandatory] item number&lt;/li&gt; &lt;li&gt;<code>gl_code</code> [String] general ledger code&lt;/li&gt; &lt;li&gt;<code>price</code> [Money] item price&lt;/li&gt; &lt;li&gt;<code>gap</code> [Money] gap amount&lt;/li&gt; &lt;li&gt;<code>copayment</code> [Money] co-payment amount&lt;/li&gt; &lt;li&gt;<code>excess</code> [Money] excess amount&lt;/li&gt; &lt;li&gt;<code>online_description</code> [String] optional medicare service text&lt;/code&gt;&lt;/li&gt; &lt;li&gt;<code>duplicate_service_override</code> [Boolean] if true, sets the duplicate service override flag for medicare online&lt;/li&gt; &lt;li&gt;<code>restrictive_override</code> [String] set a restrictive override flag for this line item&lt;/code&gt;&lt;/li&gt; &lt;li&gt;<code>assist_practitioner</code> [ProfessionalContact] or [Integer] for assistance billing, the primary surgeon (if item code includes an &#39;S&#39;) or the assisting practitioner (if item code does not include an &#39;S&#39;). The contact must have a provider number or invoice creation will fail&lt;/li&gt; &lt;li&gt;<code>extra_code_1</code>, <code>extra_code_2</code>, <code>extra_code_3</code>, <code>extra_code_4</code></p>
+
+<pre class="code ruby"><code class="ruby">[String] set an custom extra code on the invoice&lt;/li&gt;
+</code></pre>
+
+<p>&lt;/ul&gt;</p>
+
+<p>Pricing per line item is optional - if not included, the price will be looked up depending on the patient account type and associate billing table.  Alternatively, the pricing can be specified in options (see below).</p>
+
+<p>If the <code>gl_code</code> is not present, it will default to the item&#39;s General Ledger Audit Code (if present) or the associated admission&#39;s General Ledger Audit Code (if present).</p>
+
+<p>Note: You may find it helpful to use the <code>LineItemTemplateBuilder</code> class to generated this array,</p>
+
+<p>The <code>options</code> object, if present, is allowed the following properties: &lt;ul&gt; &lt;li&gt;<code>referral</code> - controls how a referral is attached to the invoice and may be one of the following:</p>
+
+<pre class="code ruby"><code class="ruby">&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;auto&lt;/code&gt; - (default behaviour) a referral will be attached
+if available&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;none&lt;/code&gt; - a referral is not required&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;required&lt;/code&gt; - the invoice must have a referral, if a
+valid referral is not available then no invoice is created&lt;/li&gt;
+&lt;li&gt;a &lt;code&gt;Referral&lt;/code&gt; object - this specific referral will be
+used as the referral on the invoice&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+<p>&lt;/li&gt;</p>
+
+<p>&lt;li&gt;<code>referral_override</code> - if <code>referral</code> is <code>none</code> or <code>auto</code> and no referral is found, this option specifies the referral override code for the invoice.  The valid options are:</p>
+
+<pre class="code ruby"><code class="ruby">&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;N&lt;/code&gt; (default) - Referral not required&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;L&lt;/code&gt; - Lost Referral&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;E&lt;/code&gt; - Emergency Referral&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;H&lt;/code&gt; - Hospital Referral&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;R&lt;/code&gt; - Remote Exception (DVA only)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;G&lt;/code&gt; - Grandfathering Provisions (DVA only)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;V&lt;/code&gt; - Verbal (DVA only)&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+<p>&lt;/li&gt;</p>
+
+<p>&lt;li&gt;<code>admission</code> - the admission that the invoice should be associated with. Should only be used for hospital changes like accommodation and theatre.&lt;/li&gt;</p>
+
+<p>&lt;li&gt;<code>mpr</code> [Boolean] - true to apply the MPR explicitly. MPR will be applied automatically if the invoice contains any assistant items.  False by default.&lt;/li&gt;</p>
+
+<p>&lt;li&gt;<code>copayment</code> [Money] - If set this copayment will be applied to all items in the invoice starting from the first item working its way down until all used up. Cannot be set if the copayment option is set on any item in the items parameter. Raises errors if excess higher than fund rebate, unless <code>cap_excess</code> passed.&lt;/li&gt;</p>
+
+<p>&lt;li&gt;<code>excess</code> [Money] - If set this copayment will be applied to all items in the invoice starting from the first item working its way down until all used up. Cannot be set if the excess option is set on any item in the items parameter. Raises errors if excess higher than fund rebate, unless <code>cap_excess</code> passed.&lt;/li&gt;</p>
+
+<p>&lt;li&gt;<code>cap_excess</code> [Boolean] - Whether to raise errors if excess too high&lt;/li&gt;</p>
+
+<p>&lt;li&gt;<code>gap</code> [Money] - If set this gap payment will be applied evenly across all items. Cannot be set if the price option is set. The item price will be calculated as the fund price / rebate price plus the gap.  Cannot be set if the gap or price option is set on any item in the items parameter.&lt;/li&gt;</p>
+
+<p>&lt;li&gt;<code>price</code> [Money] - If set this price will be applied evenly across all items. Cannot be set if the gap option is set. Cannot be set if the price or gap option is set on any item in the items parameter.&lt;/li&gt;</p>
+
+<p>&lt;li&gt;<code>note</code> [String] - invoice note up to 255 characters&lt;/li&gt;</p>
+
+<p>&lt;li&gt;<code>dva_treatment_code</code> [String] - if the guarantor is DVA, overrides the DVA treatment code with this value.  Must be one of <code>V</code>, <code>H</code>, <code>R</code>, <code>N</code> or <code>C</code>.&lt;/li&gt;</p>
+
+<p>&lt;li&gt;<code>restrictive_override</code> [String] - sets a restrictive override code for all line items on the invoice, unless another value is set in the line items array.&lt;/li&gt;</p>
+
+<p>&lt;li&gt;<code>extra_code_1</code>, <code>extra_code_2</code>, <code>extra_code_3</code>, <code>extra_code_4</code></p>
+
+<pre class="code ruby"><code class="ruby">- [String] set an custom extra code on the line item&lt;/li&gt;
+</code></pre>
+
+<p>&lt;/ul&gt;</p>
+
+<p>Valid values for restrictive override codes are: &lt;ul&gt; &lt;li&gt;<code>SP</code> - Separate Sites&lt;/li&gt; &lt;li&gt;<code>NR</code> - Not Related (Care Plans)&lt;/li&gt; &lt;li&gt;<code>NC</code> - Not for Comparison&lt;/li&gt; &lt;/ul&gt;</p>
+
+<p>Extra codes, if present, must match an enabled generic code on the corresponding generic table, or the invoice will not be created.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code>var patient = assessment.patient
+var associate = 1
+var guarantor = 12
+var location = 1
+var account = patient.find_or_create_patient_account(location, guarantor, associate)
+var service_location = 2
+var items = new Array
+items.push({ code: &#39;33133&#39;, gl_code: &#39;1&#39;, price: &#39;44.75&#39; })
+items.push({ code: &#39;33100&#39;, gl_code: &#39;2&#39; })
+var options = {referral: &#39;none&#39;, note: &#39;This is a test&#39;, mpr: true, admission: 6}
+var invoice = account.create_invoice(associate,service_location, items, options)</code></pre>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Create an invoice on a private account, with a hospital referral</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_var'>var</span> <span class='id identifier rubyid_invoice'>invoice</span> <span class='op'>=</span> <span class='id identifier rubyid_account'>account</span><span class='period'>.</span><span class='id identifier rubyid_create_invoice'>create_invoice</span><span class='lparen'>(</span><span class='id identifier rubyid_associate'>associate</span><span class='comma'>,</span> <span class='id identifier rubyid_service_location'>service_location</span><span class='comma'>,</span> <span class='id identifier rubyid_items'>items</span><span class='comma'>,</span> <span class='lbrace'>{</span> <span class='label'>referral:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>none</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='label'>referral_override:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>H</span><span class='tstring_end'>&#39;</span></span> <span class='rbrace'>}</span><span class='rparen'>)</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>medical_provider</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="MedicalProvider.html" title="TriggerWrappers::MedicalProvider (class)">MedicalProvider</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>service_location</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="ServiceLocation.html" title="TriggerWrappers::ServiceLocation (class)">ServiceLocation</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>items</span>
+      
+      
+        <span class='type'>(<tt>Array</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Object</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Invoice.html" title="TriggerWrappers::Invoice (class)">Invoice</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>null</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>if an error occurred or a parameter is invalid</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="create_opening_balance-instance_method">
+  
+    #<strong>create_opening_balance</strong>(debit, credit, options = {})  &#x21d2; <tt><span class='object_link'><a href="Statement.html" title="TriggerWrappers::Statement (class)">Statement</a></span></tt>, <tt>null</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Creates an opening balance statement on this account.</p>
+
+<p>The returned statement is pre-saved.</p>
+
+<p>Valid options: &lt;ul&gt; &lt;li&gt;<code>date</code> [Date] optional statement date (defaults to today)&lt;/li&gt; &lt;li&gt;<code>node</code> [String] optional statement note&lt;/li&gt; &lt;/ul&gt;</p>
+
+<p>If a note is provided it will be truncated to 500 characters.</p>
+
+<p>This function will always fail and return null if the Accounting option <em>Allow new opening balances</em> is set to <code>No</code>.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>debit</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Decimal.html" title="TriggerWrappers::Decimal (class)">Decimal</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>credit</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Decimal.html" title="TriggerWrappers::Decimal (class)">Decimal</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Object</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Statement.html" title="TriggerWrappers::Statement (class)">Statement</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>null</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>if the statement could not be created.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="create_receipt-instance_method">
+  
+    #<strong>create_receipt</strong>(location, transactions, options = nil)  &#x21d2; <tt><span class='object_link'><a href="Receipt.html" title="TriggerWrappers::Receipt (class)">Receipt</a></span></tt>, <tt>null</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Creates a receipt attached this this patient account</p>
+
+<p>The <code>transactions</code> array is expected to contain object with the following properties: &lt;ul&gt; &lt;li&gt;<code>credit</code> [Money]&lt;/li&gt; &lt;li&gt;<code>means</code> [String] matching one of:</p>
+
+<pre class="code ruby"><code class="ruby">&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;C&lt;/code&gt; - Cash&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;Q&lt;/code&gt; - Cheque&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;B&lt;/code&gt; - Credit Card (Manual)&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;E&lt;/code&gt; - Eftpos (Savings A/C)&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;D&lt;/code&gt; - Direct Deposit&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;T&lt;/code&gt; - Transfer&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;X&lt;/code&gt; - Cheque for External Payee&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;P&lt;/code&gt; - BPAY&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;R&lt;/code&gt; - Eftpos (Credit A/C)&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+<p>&lt;/li&gt; &lt;li&gt;<code>details</code> [String] must be a prediction bank record if means in [q,d,x] mandatory&lt;/li&gt; &lt;li&gt;<code>details</code> [String] must be a prediction card record if means in [b,e,r] mandatory&lt;/li&gt; &lt;li&gt;<code>branch</code> [String] must be a prediction branch record if means in [q,d,x] mandatory&lt;/li&gt; &lt;li&gt;<code>drawer</code> [String] if means in [q,d,x] optional&lt;/li&gt; &lt;li&gt;<code>user</code> [User] or [StaffMember] optional&lt;/li&gt; &lt;/ul&gt;</p>
+
+<p>The <code>options</code> object, if present, is allowed the following properties: &lt;ul&gt; &lt;li&gt;<code>date</code> [Date] - Receipt date - defaults to current date at the receipt&#39;s location&lt;/li&gt; &lt;li&gt;<code>detail</code> [String] - A detail string title for Account enquiries&lt;/li&gt; &lt;li&gt;<code>gst_deposit</code> [Boolean] - defaults to false&lt;li&gt; &lt;li&gt;<code>note</code> [String] - A note string that is added to the receipt&lt;/li&gt; &lt;/ul&gt;</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_var'>var</span> <span class='id identifier rubyid_patient'>patient</span> <span class='op'>=</span> <span class='id identifier rubyid_assessment'>assessment</span><span class='period'>.</span><span class='id identifier rubyid_current_assessment'>current_assessment</span><span class='period'>.</span><span class='id identifier rubyid_patient'>patient</span>
+<span class='id identifier rubyid_var'>var</span> <span class='id identifier rubyid_associate'>associate</span> <span class='op'>=</span> <span class='int'>1</span>
+<span class='id identifier rubyid_var'>var</span> <span class='id identifier rubyid_guarantor'>guarantor</span> <span class='op'>=</span> <span class='int'>12</span>
+<span class='id identifier rubyid_var'>var</span> <span class='id identifier rubyid_location'>location</span> <span class='op'>=</span> <span class='int'>1</span>
+<span class='id identifier rubyid_var'>var</span> <span class='id identifier rubyid_account'>account</span> <span class='op'>=</span> <span class='id identifier rubyid_patient'>patient</span><span class='period'>.</span><span class='id identifier rubyid_find_or_create_patient_account'>find_or_create_patient_account</span><span class='lparen'>(</span><span class='id identifier rubyid_location'>location</span><span class='comma'>,</span><span class='id identifier rubyid_guarantor'>guarantor</span><span class='comma'>,</span><span class='id identifier rubyid_associate'>associate</span><span class='rparen'>)</span>
+<span class='id identifier rubyid_transactions'>transactions</span> <span class='op'>=</span> <span class='id identifier rubyid_new'>new</span> <span class='const'>Array</span>
+<span class='id identifier rubyid_transactions'>transactions</span><span class='period'>.</span><span class='id identifier rubyid_push'>push</span><span class='lparen'>(</span><span class='lbrace'>{</span><span class='label'>credit:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>10</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='label'>means:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>C</span><span class='tstring_end'>&#39;</span></span><span class='rbrace'>}</span><span class='rparen'>)</span>
+<span class='id identifier rubyid_transactions'>transactions</span><span class='period'>.</span><span class='id identifier rubyid_push'>push</span><span class='lparen'>(</span><span class='lbrace'>{</span>
+  <span class='label'>credit:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>25</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+  <span class='label'>means:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Q</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+  <span class='label'>details:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Anz</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+  <span class='label'>branch:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>central</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+  <span class='label'>drawer:</span> <span class='lparen'>(</span><span class='id identifier rubyid_patient'>patient</span><span class='period'>.</span><span class='id identifier rubyid_given_name'>given_name</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'> </span><span class='tstring_end'>&#39;</span></span> <span class='op'>+</span> <span class='id identifier rubyid_patient'>patient</span><span class='period'>.</span><span class='id identifier rubyid_family_name'>family_name</span><span class='rparen'>)</span>
+<span class='rbrace'>}</span><span class='rparen'>)</span>
+<span class='id identifier rubyid_transactions'>transactions</span><span class='period'>.</span><span class='id identifier rubyid_push'>push</span><span class='lparen'>(</span><span class='lbrace'>{</span><span class='label'>credit:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>15</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='label'>means:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>E</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='label'>details:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Visa</span><span class='tstring_end'>&#39;</span></span><span class='rbrace'>}</span><span class='rparen'>)</span>
+<span class='id identifier rubyid_var'>var</span> <span class='id identifier rubyid_options'>options</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='label'>gst_deposit:</span> <span class='kw'>false</span><span class='comma'>,</span> <span class='label'>detail:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>This is the detail</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='label'>note:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>This is the note</span><span class='tstring_end'>&#39;</span></span> <span class='rbrace'>}</span>
+<span class='id identifier rubyid_var'>var</span> <span class='id identifier rubyid_receipt'>receipt</span> <span class='op'>=</span> <span class='id identifier rubyid_account'>account</span><span class='period'>.</span><span class='id identifier rubyid_build_receipt'>build_receipt</span><span class='lparen'>(</span><span class='id identifier rubyid_location'>location</span><span class='comma'>,</span> <span class='id identifier rubyid_transactions'>transactions</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>location</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Location.html" title="TriggerWrappers::Location (class)">Location</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>transactions</span>
+      
+      
+        <span class='type'>(<tt>Array</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Object</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Receipt.html" title="TriggerWrappers::Receipt (class)">Receipt</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>null</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>if the receipt could not be created</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="date_of_first_invoice-instance_method">
+  
+    #<strong>date_of_first_invoice</strong>(_fake_param_for_ruby_racer)  &#x21d2; <tt><span class='object_link'><a href="Date.html" title="TriggerWrappers::Date (class)">Date</a></span></tt>, <tt>null</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the earliest date raised of any invoice on this account.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Date.html" title="TriggerWrappers::Date (class)">Date</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>null</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>if there are no invoices</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="fund_label_invoice-instance_method">
+  
+    #<strong>fund_label_invoice</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the string <code>Member No</code> if this patient account is for a health fund.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="fund_value_invoice-instance_method">
+  
+    #<strong>fund_value_invoice</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the patient&#39;s fund membership number if this patient account is for a health fund.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="guarantor-instance_method">
+  
+    #<strong>guarantor</strong>  &#x21d2; <tt><span class='object_link'><a href="Guarantor.html" title="TriggerWrappers::Guarantor (class)">Guarantor</a></span></tt>, <tt>null</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the guarantor associated with this account</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Guarantor.html" title="TriggerWrappers::Guarantor (class)">Guarantor</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>null</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>for private accounts</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="has_unallocated_credits-instance_method">
+  
+    #<strong>has_unallocated_credits</strong>(_fake_param_for_ruby_racer)  &#x21d2; <tt>Boolean</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns true if the account has any unallocated credits.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="is_held-instance_method">
+  
+    #<strong>is_held</strong>  &#x21d2; <tt>Boolean</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns true if this account is flagged <code>Hold from statements</code>.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="label_1_invoice-instance_method">
+  
+    #<strong>label_1_invoice</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns either <code>DVA Number</code> or <code>Fund</code> depending on the patient account type.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="location-instance_method">
+  
+    #<strong>location</strong>  &#x21d2; <tt><span class='object_link'><a href="Location.html" title="TriggerWrappers::Location (class)">Location</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the location associated with this account</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Location.html" title="TriggerWrappers::Location (class)">Location</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="name_invoice-instance_method">
+  
+    #<strong>name_invoice</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the Guarantor name if account has a guarantor. Returns the first name and surname of claimant if private account and claimant details have been entered. Returns the first name and surname of patient if private account and no claimant.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="opening_balances-instance_method">
+  
+    #<strong>opening_balances</strong>  &#x21d2; <tt>Array</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns an array of Opening Balance type statements on this account.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>of [Statement]</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="provider-instance_method">
+  
+    #<strong>provider</strong>  &#x21d2; <tt><span class='object_link'><a href="Provider.html" title="TriggerWrappers::Provider (class)">Provider</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the provider associated with this account</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Provider.html" title="TriggerWrappers::Provider (class)">Provider</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="value_1_invoice-instance_method">
+  
+    #<strong>value_1_invoice</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the patient&#39;s DVA number, or the guarantor name depending on the patient account type.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="write_on_or_off_balance-instance_method">
+  
+    #<strong>write_on_or_off_balance</strong>(options = {})  &#x21d2; <tt><span class='object_link'><a href="Statement.html" title="TriggerWrappers::Statement (class)">Statement</a></span></tt>, ... 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Write on or off an account, so that its new balance is $0.  If the account balance is already $0, no action is taken.</p>
+
+<p>If the account is in debit, a Write Off (Credit) adjustment will be created.</p>
+
+<p>If the account is in credit, a Write on (Debit) adjustment will be created.</p>
+
+<p>The adjustment statement will then be allocated to each unpaid line item on the account.</p>
+
+<p>Valid options are: &lt;ul&gt; &lt;li&gt;<code>adjustment_type_on</code> [String] optional adjustment type to use for write ons (default is <code>Write On</code>)&lt;/li&gt; &lt;li&gt;<code>adjustment_type_off</code> [String] optional adjustment type to use for write offs (default is <code>Write Off</code>)&lt;/li&gt; &lt;/ul&gt;</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Object</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Statement.html" title="TriggerWrappers::Statement (class)">Statement</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the adjustment statement that was created</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>true if no adjustment was required</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>null</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>if the adjustment could not be made</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Mon Sep  9 11:24:42 2024 by
+  
+</div>
+
+    </div>
+  </body>
+</html>

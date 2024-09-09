@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: TriggerWrappers::Receipt
+  
+    &mdash; Documentation by YARD 0.9.34
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" />
+
+<script type="text/javascript">
+  pathId = "TriggerWrappers::Receipt";
+  relpath = '../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../_index.html">Index (R)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../TriggerWrappers.html" title="TriggerWrappers (module)">TriggerWrappers</a></span></span>
+     &raquo; 
+    <span class="title">Receipt</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Class: TriggerWrappers::Receipt
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName"><span class='object_link'><a href="ActiveRecordBase.html" title="TriggerWrappers::ActiveRecordBase (class)">ActiveRecordBase</a></span></span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next"><span class='object_link'><a href="Base.html" title="TriggerWrappers::Base (class)">Base</a></span></li>
+          
+            <li class="next"><span class='object_link'><a href="ActiveRecordBase.html" title="TriggerWrappers::ActiveRecordBase (class)">ActiveRecordBase</a></span></li>
+          
+            <li class="next">TriggerWrappers::Receipt</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>app/models/trigger_wrappers/receipt.rb</dd>
+  </dl>
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Represents a Receipt record.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#abn-instance_method" title="#abn (instance method)">#<strong>abn</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns an ABN.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#abn_title-instance_method" title="#abn_title (instance method)">#<strong>abn_title</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns an ABN title.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#account_provider_name_invoice-instance_method" title="#account_provider_name_invoice (instance method)">#<strong>account_provider_name_invoice</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the name of the account provider of this Receipt.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#account_provider_prov_numb-instance_method" title="#account_provider_prov_numb (instance method)">#<strong>account_provider_prov_numb</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the provider number of the account provider of this Receipt.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#associate-instance_method" title="#associate (instance method)">#<strong>associate</strong>  &#x21d2; MedicalProvider </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the medical provider associated with this Receipt.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#auto_allocate-instance_method" title="#auto_allocate (instance method)">#<strong>auto_allocate</strong>(options = {})  &#x21d2; Boolean </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Automatically allocate this Receipt.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#guarantor_address_invoice-instance_method" title="#guarantor_address_invoice (instance method)">#<strong>guarantor_address_invoice</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns a 2 line address of the guarantor of this Receipt.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#guarantor_name_invoice-instance_method" title="#guarantor_name_invoice (instance method)">#<strong>guarantor_name_invoice</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the name of the guarantor of this Receipt.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#outstanding_text_receipt-instance_method" title="#outstanding_text_receipt (instance method)">#<strong>outstanding_text_receipt</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns a string describing the account balanced.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#outstanding_value_receipt-instance_method" title="#outstanding_value_receipt (instance method)">#<strong>outstanding_value_receipt</strong>  &#x21d2; Decimal </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the balance of the patient account this Receipt belongs to.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#parent_statement-instance_method" title="#parent_statement (instance method)">#<strong>parent_statement</strong>  &#x21d2; Receipt </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>returns itself.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#patient-instance_method" title="#patient (instance method)">#<strong>patient</strong>  &#x21d2; Patient </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the patient that this Receipt belongs to.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#patient_account-instance_method" title="#patient_account (instance method)">#<strong>patient_account</strong>  &#x21d2; PatientAccount </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the patient account that this Receipt belongs to.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#patient_address_invoice-instance_method" title="#patient_address_invoice (instance method)">#<strong>patient_address_invoice</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns a 2 line address of the patient of this Receipt.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#patient_name_invoice-instance_method" title="#patient_name_invoice (instance method)">#<strong>patient_name_invoice</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the patient name of this Receipt.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#reallocate-instance_method" title="#reallocate (instance method)">#<strong>reallocate</strong>(allocations)  &#x21d2; Boolean </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Allocates (or reallocates) payments from this Receipt to a set of line items.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#statement-instance_method" title="#statement (instance method)">#<strong>statement</strong>  &#x21d2; Receipt </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>returns itself.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#transactions-instance_method" title="#transactions (instance method)">#<strong>transactions</strong>  &#x21d2; Array </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns an array of transactions belonging to this Receipt.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#value_receipt-instance_method" title="#value_receipt (instance method)">#<strong>value_receipt</strong>  &#x21d2; Decimal </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the receipt value of this Receipt.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="ActiveRecordBase.html" title="TriggerWrappers::ActiveRecordBase (class)">ActiveRecordBase</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="ActiveRecordBase.html#[]-instance_method" title="TriggerWrappers::ActiveRecordBase#[] (method)">#[]</a></span>, <span class='object_link'><a href="ActiveRecordBase.html#[]=-instance_method" title="TriggerWrappers::ActiveRecordBase#[]= (method)">#[]=</a></span>, <span class='object_link'><a href="ActiveRecordBase.html#add_error-instance_method" title="TriggerWrappers::ActiveRecordBase#add_error (method)">#add_error</a></span>, <span class='object_link'><a href="ActiveRecordBase.html#box_layout-instance_method" title="TriggerWrappers::ActiveRecordBase#box_layout (method)">#box_layout</a></span>, <span class='object_link'><a href="ActiveRecordBase.html#class_name-instance_method" title="TriggerWrappers::ActiveRecordBase#class_name (method)">#class_name</a></span>, <span class='object_link'><a href="ActiveRecordBase.html#error_messages-instance_method" title="TriggerWrappers::ActiveRecordBase#error_messages (method)">#error_messages</a></span>, <span class='object_link'><a href="ActiveRecordBase.html#errors-instance_method" title="TriggerWrappers::ActiveRecordBase#errors (method)">#errors</a></span>, <span class='object_link'><a href="ActiveRecordBase.html#id-instance_method" title="TriggerWrappers::ActiveRecordBase#id (method)">#id</a></span>, <span class='object_link'><a href="ActiveRecordBase.html#initialize-instance_method" title="TriggerWrappers::ActiveRecordBase#initialize (method)">#initialize</a></span>, <span class='object_link'><a href="ActiveRecordBase.html#inspect-instance_method" title="TriggerWrappers::ActiveRecordBase#inspect (method)">#inspect</a></span>, <span class='object_link'><a href="ActiveRecordBase.html#is_new-instance_method" title="TriggerWrappers::ActiveRecordBase#is_new (method)">#is_new</a></span>, <span class='object_link'><a href="ActiveRecordBase.html#method_missing-instance_method" title="TriggerWrappers::ActiveRecordBase#method_missing (method)">#method_missing</a></span>, <span class='object_link'><a href="ActiveRecordBase.html#respond_to_missing%3F-instance_method" title="TriggerWrappers::ActiveRecordBase#respond_to_missing? (method)">#respond_to_missing?</a></span>, <span class='object_link'><a href="ActiveRecordBase.html#save-instance_method" title="TriggerWrappers::ActiveRecordBase#save (method)">#save</a></span>, <span class='object_link'><a href="ActiveRecordBase.html#strip_diagnosis_procedure_code-instance_method" title="TriggerWrappers::ActiveRecordBase#strip_diagnosis_procedure_code (method)">#strip_diagnosis_procedure_code</a></span>, <span class='object_link'><a href="ActiveRecordBase.html#to_s-instance_method" title="TriggerWrappers::ActiveRecordBase#to_s (method)">#to_s</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="Base.html" title="TriggerWrappers::Base (class)">Base</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Base.html#initialize-instance_method" title="TriggerWrappers::Base#initialize (method)">#initialize</a></span>, <span class='object_link'><a href="Base.html#to_s-instance_method" title="TriggerWrappers::Base#to_s (method)">#to_s</a></span></p>
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <p class="notice">This class inherits a constructor from <span class='object_link'><a href="ActiveRecordBase.html#initialize-instance_method" title="TriggerWrappers::ActiveRecordBase#initialize (method)">TriggerWrappers::ActiveRecordBase</a></span></p>
+  
+</div>
+<div id="method_missing_details" class="method_details_list">
+  <h2>Dynamic Method Handling</h2>
+  <p class="notice super">
+    This class handles dynamic methods through the <tt>method_missing</tt> method
+    
+      in the class <span class='object_link'><a href="ActiveRecordBase.html#method_missing-instance_method" title="TriggerWrappers::ActiveRecordBase#method_missing (method)">TriggerWrappers::ActiveRecordBase</a></span>
+    
+  </p>
+  
+</div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="abn-instance_method">
+  
+    #<strong>abn</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns an ABN.</p>
+
+<p>If ABN is configured at Practice, this returns the Practice ABN from Accounting &gt; Main choices.  Otherwise it returns the ABN of the medical provider associated with this invoice.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="abn_title-instance_method">
+  
+    #<strong>abn_title</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns an ABN title.</p>
+
+<p>If ABN is configured at Practice, this returns the Practice ABN Title from Accounting &gt; Main choices. Otherwise it returns the ABN Title of the medical provider associated with this estimate.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="account_provider_name_invoice-instance_method">
+  
+    #<strong>account_provider_name_invoice</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the name of the account provider of this Receipt.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="account_provider_prov_numb-instance_method">
+  
+    #<strong>account_provider_prov_numb</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the provider number of the account provider of this Receipt.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="associate-instance_method">
+  
+    #<strong>associate</strong>  &#x21d2; <tt><span class='object_link'><a href="MedicalProvider.html" title="TriggerWrappers::MedicalProvider (class)">MedicalProvider</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the medical provider associated with this Receipt.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="MedicalProvider.html" title="TriggerWrappers::MedicalProvider (class)">MedicalProvider</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="auto_allocate-instance_method">
+  
+    #<strong>auto_allocate</strong>(options = {})  &#x21d2; <tt>Boolean</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Automatically allocate this Receipt.</p>
+
+<p>The credit amount of this Receipt will be allocated to line items which are not fully paid.  Line items will be paid down in reverse chronological order.</p>
+
+<p>If the Receipt balance is higher than the amount on outstanding line items, then the last line item will be overallocated (if the <code>overallocate</code> option is true) or allocation will fail (default). If there are no unpaid items, the last line item will be overallocated (if the <code>overallocate</code> option is true) or allocation will fail (default).</p>
+
+<p>Valid options: &lt;ul&gt; &lt;li&gt;<code>overallocate</code> [Boolean] if true allow overallocation&lt;/li&gt; &lt;/ul&gt;</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Object</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>true if no issues were encountered</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="guarantor_address_invoice-instance_method">
+  
+    #<strong>guarantor_address_invoice</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns a 2 line address of the guarantor of this Receipt.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="guarantor_name_invoice-instance_method">
+  
+    #<strong>guarantor_name_invoice</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the name of the guarantor of this Receipt.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="outstanding_text_receipt-instance_method">
+  
+    #<strong>outstanding_text_receipt</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns a string describing the account balanced.</p>
+
+<p>It will be one of: &lt;ul&gt; &lt;li&gt;<code>Your account as at DD/MM/YYYY was OUTSTANDING</code>&lt;/li&gt; &lt;li&gt;<code>Your account as at DD/MM/YYYY was in CREDIT</code>&lt;/li&gt; &lt;/ul&gt;</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="outstanding_value_receipt-instance_method">
+  
+    #<strong>outstanding_value_receipt</strong>  &#x21d2; <tt><span class='object_link'><a href="Decimal.html" title="TriggerWrappers::Decimal (class)">Decimal</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the balance of the patient account this Receipt belongs to.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Decimal.html" title="TriggerWrappers::Decimal (class)">Decimal</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="parent_statement-instance_method">
+  
+    #<strong>parent_statement</strong>  &#x21d2; <tt><span class='object_link'><a href="" title="TriggerWrappers::Receipt (class)">Receipt</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>returns itself.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="TriggerWrappers::Receipt (class)">Receipt</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="patient-instance_method">
+  
+    #<strong>patient</strong>  &#x21d2; <tt><span class='object_link'><a href="Patient.html" title="TriggerWrappers::Patient (class)">Patient</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the patient that this Receipt belongs to.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Patient.html" title="TriggerWrappers::Patient (class)">Patient</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="patient_account-instance_method">
+  
+    #<strong>patient_account</strong>  &#x21d2; <tt><span class='object_link'><a href="PatientAccount.html" title="TriggerWrappers::PatientAccount (class)">PatientAccount</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the patient account that this Receipt belongs to.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="PatientAccount.html" title="TriggerWrappers::PatientAccount (class)">PatientAccount</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="patient_address_invoice-instance_method">
+  
+    #<strong>patient_address_invoice</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns a 2 line address of the patient of this Receipt.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="patient_name_invoice-instance_method">
+  
+    #<strong>patient_name_invoice</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the patient name of this Receipt.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="reallocate-instance_method">
+  
+    #<strong>reallocate</strong>(allocations)  &#x21d2; <tt>Boolean</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Allocates (or reallocates) payments from this Receipt to a set of line items.</p>
+
+<p><code>allocations</code> must be an array where each element is a pair of two items: &lt;ul&gt; &lt;li&gt;a <code>LineItem</code> object, and&lt;li&gt; &lt;li&gt;an amount to allocate (a decimal number or a string containing a number)&lt;/li&gt; &lt;/ul&gt;</p>
+
+<p>The affected objects will be saved automatically.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Allocate an amount equal to paid rebate to each line item for an invoice</p>
+</div></p>
+      
+      <pre class="example code"><code>var line_items_and_amounts = []
+invoice.line_items.forEach(function (invoice) {
+  line_items_and_amounts.push([line_item, line_item.rebate_paid_by_medicare])
+})
+if (receipt.reallocate(line_items_and_amounts)) {
+  console.log(&#39;Reallocation successful&#39;)
+}</code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>allocations</span>
+      
+      
+        <span class='type'>(<tt>Array</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>described above</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>true if the reallocation succeeded</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="statement-instance_method">
+  
+    #<strong>statement</strong>  &#x21d2; <tt><span class='object_link'><a href="" title="TriggerWrappers::Receipt (class)">Receipt</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>returns itself.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="TriggerWrappers::Receipt (class)">Receipt</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="transactions-instance_method">
+  
+    #<strong>transactions</strong>  &#x21d2; <tt>Array</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns an array of transactions belonging to this Receipt.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>of [Transaction]</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="value_receipt-instance_method">
+  
+    #<strong>value_receipt</strong>  &#x21d2; <tt><span class='object_link'><a href="Decimal.html" title="TriggerWrappers::Decimal (class)">Decimal</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the receipt value of this Receipt.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Decimal.html" title="TriggerWrappers::Decimal (class)">Decimal</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Mon Sep  9 11:24:40 2024 by
+  
+</div>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Module: TriggerWrappers
+  
+    &mdash; Documentation by YARD 0.9.34
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" />
+
+<script type="text/javascript">
+  pathId = "TriggerWrappers";
+  relpath = '';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="_index.html">Index (T)</a> &raquo;
+    
+    
+    <span class="title">TriggerWrappers</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Module: TriggerWrappers
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>app/models/trigger_wrappers/medical_provider.rb<span class="defines">,<br />
+  app/models/trigger_wrappers/csv.rb,<br /> app/models/trigger_wrappers/base.rb,<br /> app/models/trigger_wrappers/case.rb,<br /> app/models/trigger_wrappers/date.rb,<br /> app/models/trigger_wrappers/item.rb,<br /> app/models/trigger_wrappers/task.rb,<br /> app/models/trigger_wrappers/user.rb,<br /> app/models/trigger_wrappers/event.rb,<br /> app/models/trigger_wrappers/money.rb,<br /> app/models/trigger_wrappers/export.rb,<br /> app/models/trigger_wrappers/finder.rb,<br /> app/models/trigger_wrappers/letter.rb,<br /> app/models/trigger_wrappers/lookup.rb,<br /> app/models/trigger_wrappers/refund.rb,<br /> app/models/trigger_wrappers/result.rb,<br /> app/models/trigger_wrappers/address.rb,<br /> app/models/trigger_wrappers/builder.rb,<br /> app/models/trigger_wrappers/decimal.rb,<br /> app/models/trigger_wrappers/episode.rb,<br /> app/models/trigger_wrappers/invoice.rb,<br /> app/models/trigger_wrappers/patient.rb,<br /> app/models/trigger_wrappers/receipt.rb,<br /> app/models/trigger_wrappers/request.rb,<br /> app/models/trigger_wrappers/service.rb,<br /> app/models/trigger_wrappers/document.rb,<br /> app/models/trigger_wrappers/estimate.rb,<br /> app/models/trigger_wrappers/location.rb,<br /> app/models/trigger_wrappers/provider.rb,<br /> app/models/trigger_wrappers/referral.rb,<br /> app/models/trigger_wrappers/admission.rb,<br /> app/models/trigger_wrappers/associate.rb,<br /> app/models/trigger_wrappers/date_time.rb,<br /> app/models/trigger_wrappers/guarantor.rb,<br /> app/models/trigger_wrappers/hsp_claim.rb,<br /> app/models/trigger_wrappers/ihc_claim.rb,<br /> app/models/trigger_wrappers/line_item.rb,<br /> app/models/trigger_wrappers/statement.rb,<br /> app/models/trigger_wrappers/assessment.rb,<br /> app/models/trigger_wrappers/import_row.rb,<br /> app/models/trigger_wrappers/publishers.rb,<br /> app/models/trigger_wrappers/appointment.rb,<br /> app/models/trigger_wrappers/case_finder.rb,<br /> app/models/trigger_wrappers/csv_builder.rb,<br /> app/models/trigger_wrappers/entitlement.rb,<br /> app/models/trigger_wrappers/health_fund.rb,<br /> app/models/trigger_wrappers/item_finder.rb,<br /> app/models/trigger_wrappers/sms_message.rb,<br /> app/models/trigger_wrappers/transaction.rb,<br /> app/models/trigger_wrappers/alert_notice.rb,<br /> app/models/trigger_wrappers/date_builder.rb,<br /> app/models/trigger_wrappers/item_service.rb,<br /> app/models/trigger_wrappers/staff_member.rb,<br /> app/models/trigger_wrappers/task_builder.rb,<br /> app/models/trigger_wrappers/billing_event.rb,<br /> app/models/trigger_wrappers/estimate_item.rb,<br /> app/models/trigger_wrappers/generic_table.rb,<br /> app/models/trigger_wrappers/import_record.rb,<br /> app/models/trigger_wrappers/money_builder.rb,<br /> app/models/trigger_wrappers/correspondence.rb,<br /> app/models/trigger_wrappers/invoice_finder.rb,<br /> app/models/trigger_wrappers/is_serviceable.rb,<br /> app/models/trigger_wrappers/lookup_builder.rb,<br /> app/models/trigger_wrappers/decimal_builder.rb,<br /> app/models/trigger_wrappers/estimate_finder.rb,<br /> app/models/trigger_wrappers/general_service.rb,<br /> app/models/trigger_wrappers/letter_template.rb,<br /> app/models/trigger_wrappers/location_finder.rb,<br /> app/models/trigger_wrappers/lookup_instance.rb,<br /> app/models/trigger_wrappers/patient_account.rb,<br /> app/models/trigger_wrappers/provider_finder.rb,<br /> app/models/trigger_wrappers/guarantor_finder.rb,<br /> app/models/trigger_wrappers/service_location.rb,<br /> app/models/trigger_wrappers/assessment_finder.rb,<br /> app/models/trigger_wrappers/date_time_builder.rb,<br /> app/models/trigger_wrappers/entitlement_usage.rb,<br /> app/models/trigger_wrappers/episode_diagnosis.rb,<br /> app/models/trigger_wrappers/episode_procedure.rb,<br /> app/models/trigger_wrappers/active_record_base.rb,<br /> app/models/trigger_wrappers/current_assessment.rb,<br /> app/models/trigger_wrappers/program_attendance.rb,<br /> app/models/trigger_wrappers/assessment_instance.rb,<br /> app/models/trigger_wrappers/entitlement_category.rb,<br /> app/models/trigger_wrappers/generic_table_finder.rb,<br /> app/models/trigger_wrappers/professional_contact.rb,<br /> app/models/trigger_wrappers/professional_category.rb,<br /> app/models/trigger_wrappers/letter_template_finder.rb,<br /> app/models/trigger_wrappers/workflow_model_instance.rb,<br /> app/models/trigger_wrappers/genea_estimate_publisher.rb,<br /> app/models/trigger_wrappers/line_item_template_builder.rb,<br /> app/models/trigger_wrappers/professional_contact_finder.rb,<br /> app/models/trigger_wrappers/dva_community_nursing_service.rb,<br /> app/models/trigger_wrappers/external_crm_platform_publisher.rb,<br /> app/models/trigger_wrappers/medical_provider_service_location.rb</span>
+</dd>
+  </dl>
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>NOTE: MedicalProvider class will eventually be removed in favour of Provider. Avoid adding public API functions which will make it harder to remove. Consider adding methods to TriggerWrappers::Provider instead.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><h2>Defined Under Namespace</h2>
+<p class="children">
+  
+    
+      <strong class="modules">Modules:</strong> <span class='object_link'><a href="TriggerWrappers/IsServiceable.html" title="TriggerWrappers::IsServiceable (module)">IsServiceable</a></span>
+    
+  
+    
+      <strong class="classes">Classes:</strong> <span class='object_link'><a href="TriggerWrappers/ActiveRecordBase.html" title="TriggerWrappers::ActiveRecordBase (class)">ActiveRecordBase</a></span>, <span class='object_link'><a href="TriggerWrappers/Address.html" title="TriggerWrappers::Address (class)">Address</a></span>, <span class='object_link'><a href="TriggerWrappers/Admission.html" title="TriggerWrappers::Admission (class)">Admission</a></span>, <span class='object_link'><a href="TriggerWrappers/AlertNotice.html" title="TriggerWrappers::AlertNotice (class)">AlertNotice</a></span>, <span class='object_link'><a href="TriggerWrappers/Appointment.html" title="TriggerWrappers::Appointment (class)">Appointment</a></span>, <span class='object_link'><a href="TriggerWrappers/Assessment.html" title="TriggerWrappers::Assessment (class)">Assessment</a></span>, <span class='object_link'><a href="TriggerWrappers/AssessmentFinder.html" title="TriggerWrappers::AssessmentFinder (class)">AssessmentFinder</a></span>, <span class='object_link'><a href="TriggerWrappers/AssessmentInstance.html" title="TriggerWrappers::AssessmentInstance (class)">AssessmentInstance</a></span>, <span class='object_link'><a href="TriggerWrappers/Associate.html" title="TriggerWrappers::Associate (class)">Associate</a></span>, <span class='object_link'><a href="TriggerWrappers/Base.html" title="TriggerWrappers::Base (class)">Base</a></span>, <span class='object_link'><a href="TriggerWrappers/BillingEvent.html" title="TriggerWrappers::BillingEvent (class)">BillingEvent</a></span>, <span class='object_link'><a href="TriggerWrappers/Builder.html" title="TriggerWrappers::Builder (class)">Builder</a></span>, <span class='object_link'><a href="TriggerWrappers/CSV.html" title="TriggerWrappers::CSV (class)">CSV</a></span>, <span class='object_link'><a href="TriggerWrappers/CSVBuilder.html" title="TriggerWrappers::CSVBuilder (class)">CSVBuilder</a></span>, <span class='object_link'><a href="TriggerWrappers/Case.html" title="TriggerWrappers::Case (class)">Case</a></span>, <span class='object_link'><a href="TriggerWrappers/CaseFinder.html" title="TriggerWrappers::CaseFinder (class)">CaseFinder</a></span>, <span class='object_link'><a href="TriggerWrappers/Correspondence.html" title="TriggerWrappers::Correspondence (class)">Correspondence</a></span>, <span class='object_link'><a href="TriggerWrappers/CurrentAssessment.html" title="TriggerWrappers::CurrentAssessment (class)">CurrentAssessment</a></span>, <span class='object_link'><a href="TriggerWrappers/Date.html" title="TriggerWrappers::Date (class)">Date</a></span>, <span class='object_link'><a href="TriggerWrappers/DateBuilder.html" title="TriggerWrappers::DateBuilder (class)">DateBuilder</a></span>, <span class='object_link'><a href="TriggerWrappers/DateTime.html" title="TriggerWrappers::DateTime (class)">DateTime</a></span>, <span class='object_link'><a href="TriggerWrappers/DateTimeBuilder.html" title="TriggerWrappers::DateTimeBuilder (class)">DateTimeBuilder</a></span>, <span class='object_link'><a href="TriggerWrappers/Decimal.html" title="TriggerWrappers::Decimal (class)">Decimal</a></span>, <span class='object_link'><a href="TriggerWrappers/DecimalBuilder.html" title="TriggerWrappers::DecimalBuilder (class)">DecimalBuilder</a></span>, <span class='object_link'><a href="TriggerWrappers/Document.html" title="TriggerWrappers::Document (class)">Document</a></span>, <span class='object_link'><a href="TriggerWrappers/DvaCommunityNursingService.html" title="TriggerWrappers::DvaCommunityNursingService (class)">DvaCommunityNursingService</a></span>, <span class='object_link'><a href="TriggerWrappers/Entitlement.html" title="TriggerWrappers::Entitlement (class)">Entitlement</a></span>, <span class='object_link'><a href="TriggerWrappers/EntitlementCategory.html" title="TriggerWrappers::EntitlementCategory (class)">EntitlementCategory</a></span>, <span class='object_link'><a href="TriggerWrappers/EntitlementUsage.html" title="TriggerWrappers::EntitlementUsage (class)">EntitlementUsage</a></span>, <span class='object_link'><a href="TriggerWrappers/Episode.html" title="TriggerWrappers::Episode (class)">Episode</a></span>, <span class='object_link'><a href="TriggerWrappers/EpisodeDiagnosis.html" title="TriggerWrappers::EpisodeDiagnosis (class)">EpisodeDiagnosis</a></span>, <span class='object_link'><a href="TriggerWrappers/EpisodeProcedure.html" title="TriggerWrappers::EpisodeProcedure (class)">EpisodeProcedure</a></span>, <span class='object_link'><a href="TriggerWrappers/Estimate.html" title="TriggerWrappers::Estimate (class)">Estimate</a></span>, <span class='object_link'><a href="TriggerWrappers/EstimateFinder.html" title="TriggerWrappers::EstimateFinder (class)">EstimateFinder</a></span>, <span class='object_link'><a href="TriggerWrappers/EstimateItem.html" title="TriggerWrappers::EstimateItem (class)">EstimateItem</a></span>, <span class='object_link'><a href="TriggerWrappers/Event.html" title="TriggerWrappers::Event (class)">Event</a></span>, <span class='object_link'><a href="TriggerWrappers/Export.html" title="TriggerWrappers::Export (class)">Export</a></span>, <span class='object_link'><a href="TriggerWrappers/ExternalCrmPlatformPublisher.html" title="TriggerWrappers::ExternalCrmPlatformPublisher (class)">ExternalCrmPlatformPublisher</a></span>, <span class='object_link'><a href="TriggerWrappers/Finder.html" title="TriggerWrappers::Finder (class)">Finder</a></span>, <span class='object_link'><a href="TriggerWrappers/GeneaEstimatePublisher.html" title="TriggerWrappers::GeneaEstimatePublisher (class)">GeneaEstimatePublisher</a></span>, <span class='object_link'><a href="TriggerWrappers/GeneralService.html" title="TriggerWrappers::GeneralService (class)">GeneralService</a></span>, <span class='object_link'><a href="TriggerWrappers/GenericTable.html" title="TriggerWrappers::GenericTable (class)">GenericTable</a></span>, <span class='object_link'><a href="TriggerWrappers/GenericTableFinder.html" title="TriggerWrappers::GenericTableFinder (class)">GenericTableFinder</a></span>, <span class='object_link'><a href="TriggerWrappers/Guarantor.html" title="TriggerWrappers::Guarantor (class)">Guarantor</a></span>, <span class='object_link'><a href="TriggerWrappers/GuarantorFinder.html" title="TriggerWrappers::GuarantorFinder (class)">GuarantorFinder</a></span>, <span class='object_link'><a href="TriggerWrappers/HealthFund.html" title="TriggerWrappers::HealthFund (class)">HealthFund</a></span>, <span class='object_link'><a href="TriggerWrappers/HspClaim.html" title="TriggerWrappers::HspClaim (class)">HspClaim</a></span>, <span class='object_link'><a href="TriggerWrappers/IhcClaim.html" title="TriggerWrappers::IhcClaim (class)">IhcClaim</a></span>, <span class='object_link'><a href="TriggerWrappers/ImportRecord.html" title="TriggerWrappers::ImportRecord (class)">ImportRecord</a></span>, <span class='object_link'><a href="TriggerWrappers/ImportRow.html" title="TriggerWrappers::ImportRow (class)">ImportRow</a></span>, <span class='object_link'><a href="TriggerWrappers/Invoice.html" title="TriggerWrappers::Invoice (class)">Invoice</a></span>, <span class='object_link'><a href="TriggerWrappers/InvoiceFinder.html" title="TriggerWrappers::InvoiceFinder (class)">InvoiceFinder</a></span>, <span class='object_link'><a href="TriggerWrappers/Item.html" title="TriggerWrappers::Item (class)">Item</a></span>, <span class='object_link'><a href="TriggerWrappers/ItemFinder.html" title="TriggerWrappers::ItemFinder (class)">ItemFinder</a></span>, <span class='object_link'><a href="TriggerWrappers/ItemService.html" title="TriggerWrappers::ItemService (class)">ItemService</a></span>, <span class='object_link'><a href="TriggerWrappers/Letter.html" title="TriggerWrappers::Letter (class)">Letter</a></span>, <span class='object_link'><a href="TriggerWrappers/LetterTemplate.html" title="TriggerWrappers::LetterTemplate (class)">LetterTemplate</a></span>, <span class='object_link'><a href="TriggerWrappers/LetterTemplateFinder.html" title="TriggerWrappers::LetterTemplateFinder (class)">LetterTemplateFinder</a></span>, <span class='object_link'><a href="TriggerWrappers/LineItem.html" title="TriggerWrappers::LineItem (class)">LineItem</a></span>, <span class='object_link'><a href="TriggerWrappers/LineItemTemplateBuilder.html" title="TriggerWrappers::LineItemTemplateBuilder (class)">LineItemTemplateBuilder</a></span>, <span class='object_link'><a href="TriggerWrappers/Location.html" title="TriggerWrappers::Location (class)">Location</a></span>, <span class='object_link'><a href="TriggerWrappers/LocationFinder.html" title="TriggerWrappers::LocationFinder (class)">LocationFinder</a></span>, <span class='object_link'><a href="TriggerWrappers/Lookup.html" title="TriggerWrappers::Lookup (class)">Lookup</a></span>, <span class='object_link'><a href="TriggerWrappers/LookupBuilder.html" title="TriggerWrappers::LookupBuilder (class)">LookupBuilder</a></span>, <span class='object_link'><a href="TriggerWrappers/LookupInstance.html" title="TriggerWrappers::LookupInstance (class)">LookupInstance</a></span>, <span class='object_link'><a href="TriggerWrappers/MedicalProvider.html" title="TriggerWrappers::MedicalProvider (class)">MedicalProvider</a></span>, <span class='object_link'><a href="TriggerWrappers/MedicalProviderServiceLocation.html" title="TriggerWrappers::MedicalProviderServiceLocation (class)">MedicalProviderServiceLocation</a></span>, <span class='object_link'><a href="TriggerWrappers/Money.html" title="TriggerWrappers::Money (class)">Money</a></span>, <span class='object_link'><a href="TriggerWrappers/MoneyBuilder.html" title="TriggerWrappers::MoneyBuilder (class)">MoneyBuilder</a></span>, <span class='object_link'><a href="TriggerWrappers/Patient.html" title="TriggerWrappers::Patient (class)">Patient</a></span>, <span class='object_link'><a href="TriggerWrappers/PatientAccount.html" title="TriggerWrappers::PatientAccount (class)">PatientAccount</a></span>, <span class='object_link'><a href="TriggerWrappers/ProfessionalCategory.html" title="TriggerWrappers::ProfessionalCategory (class)">ProfessionalCategory</a></span>, <span class='object_link'><a href="TriggerWrappers/ProfessionalContact.html" title="TriggerWrappers::ProfessionalContact (class)">ProfessionalContact</a></span>, <span class='object_link'><a href="TriggerWrappers/ProfessionalContactFinder.html" title="TriggerWrappers::ProfessionalContactFinder (class)">ProfessionalContactFinder</a></span>, <span class='object_link'><a href="TriggerWrappers/ProgramAttendance.html" title="TriggerWrappers::ProgramAttendance (class)">ProgramAttendance</a></span>, <span class='object_link'><a href="TriggerWrappers/Provider.html" title="TriggerWrappers::Provider (class)">Provider</a></span>, <span class='object_link'><a href="TriggerWrappers/ProviderFinder.html" title="TriggerWrappers::ProviderFinder (class)">ProviderFinder</a></span>, <span class='object_link'><a href="TriggerWrappers/Publishers.html" title="TriggerWrappers::Publishers (class)">Publishers</a></span>, <span class='object_link'><a href="TriggerWrappers/Receipt.html" title="TriggerWrappers::Receipt (class)">Receipt</a></span>, <span class='object_link'><a href="TriggerWrappers/Referral.html" title="TriggerWrappers::Referral (class)">Referral</a></span>, <span class='object_link'><a href="TriggerWrappers/Refund.html" title="TriggerWrappers::Refund (class)">Refund</a></span>, <span class='object_link'><a href="TriggerWrappers/Request.html" title="TriggerWrappers::Request (class)">Request</a></span>, <span class='object_link'><a href="TriggerWrappers/Result.html" title="TriggerWrappers::Result (class)">Result</a></span>, <span class='object_link'><a href="TriggerWrappers/Service.html" title="TriggerWrappers::Service (class)">Service</a></span>, <span class='object_link'><a href="TriggerWrappers/ServiceLocation.html" title="TriggerWrappers::ServiceLocation (class)">ServiceLocation</a></span>, <span class='object_link'><a href="TriggerWrappers/SmsMessage.html" title="TriggerWrappers::SmsMessage (class)">SmsMessage</a></span>, <span class='object_link'><a href="TriggerWrappers/StaffMember.html" title="TriggerWrappers::StaffMember (class)">StaffMember</a></span>, <span class='object_link'><a href="TriggerWrappers/Statement.html" title="TriggerWrappers::Statement (class)">Statement</a></span>, <span class='object_link'><a href="TriggerWrappers/Task.html" title="TriggerWrappers::Task (class)">Task</a></span>, <span class='object_link'><a href="TriggerWrappers/TaskBuilder.html" title="TriggerWrappers::TaskBuilder (class)">TaskBuilder</a></span>, <span class='object_link'><a href="TriggerWrappers/Transaction.html" title="TriggerWrappers::Transaction (class)">Transaction</a></span>, <span class='object_link'><a href="TriggerWrappers/User.html" title="TriggerWrappers::User (class)">User</a></span>, <span class='object_link'><a href="TriggerWrappers/WorkflowModelInstance.html" title="TriggerWrappers::WorkflowModelInstance (class)">WorkflowModelInstance</a></span>
+    
+  
+</p>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+    </div>
+  </body>
+</html>

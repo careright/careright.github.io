@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: TriggerWrappers::ActiveRecordBase
+  
+    &mdash; Documentation by YARD 0.9.34
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" />
+
+<script type="text/javascript">
+  pathId = "TriggerWrappers::ActiveRecordBase";
+  relpath = '../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../_index.html">Index (A)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../TriggerWrappers.html" title="TriggerWrappers (module)">TriggerWrappers</a></span></span>
+     &raquo; 
+    <span class="title">ActiveRecordBase</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Class: TriggerWrappers::ActiveRecordBase
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName"><span class='object_link'><a href="Base.html" title="TriggerWrappers::Base (class)">Base</a></span></span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next"><span class='object_link'><a href="Base.html" title="TriggerWrappers::Base (class)">Base</a></span></li>
+          
+            <li class="next">TriggerWrappers::ActiveRecordBase</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>app/models/trigger_wrappers/active_record_base.rb</dd>
+  </dl>
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>This is the parent class for all trigger classes which represent a CareRight record.  It is not used directly, but provides methods which you can use on other classes.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><div id="subclasses">
+  <h2>Direct Known Subclasses</h2>
+  <p class="children"><span class='object_link'><a href="Address.html" title="TriggerWrappers::Address (class)">Address</a></span>, <span class='object_link'><a href="Admission.html" title="TriggerWrappers::Admission (class)">Admission</a></span>, <span class='object_link'><a href="AlertNotice.html" title="TriggerWrappers::AlertNotice (class)">AlertNotice</a></span>, <span class='object_link'><a href="Appointment.html" title="TriggerWrappers::Appointment (class)">Appointment</a></span>, <span class='object_link'><a href="Assessment.html" title="TriggerWrappers::Assessment (class)">Assessment</a></span>, <span class='object_link'><a href="AssessmentInstance.html" title="TriggerWrappers::AssessmentInstance (class)">AssessmentInstance</a></span>, <span class='object_link'><a href="Case.html" title="TriggerWrappers::Case (class)">Case</a></span>, <span class='object_link'><a href="Correspondence.html" title="TriggerWrappers::Correspondence (class)">Correspondence</a></span>, <span class='object_link'><a href="CurrentAssessment.html" title="TriggerWrappers::CurrentAssessment (class)">CurrentAssessment</a></span>, <span class='object_link'><a href="Document.html" title="TriggerWrappers::Document (class)">Document</a></span>, <span class='object_link'><a href="DvaCommunityNursingService.html" title="TriggerWrappers::DvaCommunityNursingService (class)">DvaCommunityNursingService</a></span>, <span class='object_link'><a href="Entitlement.html" title="TriggerWrappers::Entitlement (class)">Entitlement</a></span>, <span class='object_link'><a href="EntitlementCategory.html" title="TriggerWrappers::EntitlementCategory (class)">EntitlementCategory</a></span>, <span class='object_link'><a href="EntitlementUsage.html" title="TriggerWrappers::EntitlementUsage (class)">EntitlementUsage</a></span>, <span class='object_link'><a href="Episode.html" title="TriggerWrappers::Episode (class)">Episode</a></span>, <span class='object_link'><a href="EpisodeDiagnosis.html" title="TriggerWrappers::EpisodeDiagnosis (class)">EpisodeDiagnosis</a></span>, <span class='object_link'><a href="EpisodeProcedure.html" title="TriggerWrappers::EpisodeProcedure (class)">EpisodeProcedure</a></span>, <span class='object_link'><a href="Estimate.html" title="TriggerWrappers::Estimate (class)">Estimate</a></span>, <span class='object_link'><a href="EstimateItem.html" title="TriggerWrappers::EstimateItem (class)">EstimateItem</a></span>, <span class='object_link'><a href="Event.html" title="TriggerWrappers::Event (class)">Event</a></span>, <span class='object_link'><a href="Export.html" title="TriggerWrappers::Export (class)">Export</a></span>, <span class='object_link'><a href="GeneralService.html" title="TriggerWrappers::GeneralService (class)">GeneralService</a></span>, <span class='object_link'><a href="GenericTable.html" title="TriggerWrappers::GenericTable (class)">GenericTable</a></span>, <span class='object_link'><a href="Guarantor.html" title="TriggerWrappers::Guarantor (class)">Guarantor</a></span>, <span class='object_link'><a href="HealthFund.html" title="TriggerWrappers::HealthFund (class)">HealthFund</a></span>, <span class='object_link'><a href="HspClaim.html" title="TriggerWrappers::HspClaim (class)">HspClaim</a></span>, <span class='object_link'><a href="IhcClaim.html" title="TriggerWrappers::IhcClaim (class)">IhcClaim</a></span>, <span class='object_link'><a href="Invoice.html" title="TriggerWrappers::Invoice (class)">Invoice</a></span>, <span class='object_link'><a href="Item.html" title="TriggerWrappers::Item (class)">Item</a></span>, <span class='object_link'><a href="ItemService.html" title="TriggerWrappers::ItemService (class)">ItemService</a></span>, <span class='object_link'><a href="Letter.html" title="TriggerWrappers::Letter (class)">Letter</a></span>, <span class='object_link'><a href="LetterTemplate.html" title="TriggerWrappers::LetterTemplate (class)">LetterTemplate</a></span>, <span class='object_link'><a href="LineItem.html" title="TriggerWrappers::LineItem (class)">LineItem</a></span>, <span class='object_link'><a href="Location.html" title="TriggerWrappers::Location (class)">Location</a></span>, <span class='object_link'><a href="Lookup.html" title="TriggerWrappers::Lookup (class)">Lookup</a></span>, <span class='object_link'><a href="LookupInstance.html" title="TriggerWrappers::LookupInstance (class)">LookupInstance</a></span>, <span class='object_link'><a href="MedicalProvider.html" title="TriggerWrappers::MedicalProvider (class)">MedicalProvider</a></span>, <span class='object_link'><a href="MedicalProviderServiceLocation.html" title="TriggerWrappers::MedicalProviderServiceLocation (class)">MedicalProviderServiceLocation</a></span>, <span class='object_link'><a href="Patient.html" title="TriggerWrappers::Patient (class)">Patient</a></span>, <span class='object_link'><a href="PatientAccount.html" title="TriggerWrappers::PatientAccount (class)">PatientAccount</a></span>, <span class='object_link'><a href="ProfessionalCategory.html" title="TriggerWrappers::ProfessionalCategory (class)">ProfessionalCategory</a></span>, <span class='object_link'><a href="ProfessionalContact.html" title="TriggerWrappers::ProfessionalContact (class)">ProfessionalContact</a></span>, <span class='object_link'><a href="ProgramAttendance.html" title="TriggerWrappers::ProgramAttendance (class)">ProgramAttendance</a></span>, <span class='object_link'><a href="Provider.html" title="TriggerWrappers::Provider (class)">Provider</a></span>, <span class='object_link'><a href="Receipt.html" title="TriggerWrappers::Receipt (class)">Receipt</a></span>, <span class='object_link'><a href="Referral.html" title="TriggerWrappers::Referral (class)">Referral</a></span>, <span class='object_link'><a href="Refund.html" title="TriggerWrappers::Refund (class)">Refund</a></span>, <span class='object_link'><a href="Request.html" title="TriggerWrappers::Request (class)">Request</a></span>, <span class='object_link'><a href="Result.html" title="TriggerWrappers::Result (class)">Result</a></span>, <span class='object_link'><a href="Service.html" title="TriggerWrappers::Service (class)">Service</a></span>, <span class='object_link'><a href="ServiceLocation.html" title="TriggerWrappers::ServiceLocation (class)">ServiceLocation</a></span>, <span class='object_link'><a href="SmsMessage.html" title="TriggerWrappers::SmsMessage (class)">SmsMessage</a></span>, <span class='object_link'><a href="StaffMember.html" title="TriggerWrappers::StaffMember (class)">StaffMember</a></span>, <span class='object_link'><a href="Statement.html" title="TriggerWrappers::Statement (class)">Statement</a></span>, <span class='object_link'><a href="Task.html" title="TriggerWrappers::Task (class)">Task</a></span>, <span class='object_link'><a href="Transaction.html" title="TriggerWrappers::Transaction (class)">Transaction</a></span>, <span class='object_link'><a href="User.html" title="TriggerWrappers::User (class)">User</a></span>, <span class='object_link'><a href="WorkflowModelInstance.html" title="TriggerWrappers::WorkflowModelInstance (class)">WorkflowModelInstance</a></span></p>
+</div>
+
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#[]-instance_method" title="#[] (instance method)">#<strong>[]</strong>(attr)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of a record&#39;s attribute.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#[]=-instance_method" title="#[]= (instance method)">#<strong>[]=</strong>(attr, value)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Replaces the value of an attribute on a record.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#add_error-instance_method" title="#add_error (instance method)">#<strong>add_error</strong>(attr_or_msg = nil, message = nil)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Adds a validation error to the given attribute with the optional message.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#box_layout-instance_method" title="#box_layout (instance method)">#<strong>box_layout</strong>(d, spaces, options = {})  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#class_name-instance_method" title="#class_name (instance method)">#<strong>class_name</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>in the trigger script.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#error_messages-instance_method" title="#error_messages (instance method)">#<strong>error_messages</strong>  &#x21d2; Array </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns an array of strings containing error messages for this record that prevented it from being saved.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#errors-instance_method" title="#errors (instance method)">#<strong>errors</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns an object describing validation errors on a record.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#id-instance_method" title="#id (instance method)">#<strong>id</strong>  &#x21d2; Integer </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the ID of the record.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">#<strong>initialize</strong>(context, rec, options = {})  &#x21d2; ActiveRecordBase </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>A new instance of ActiveRecordBase.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#inspect-instance_method" title="#inspect (instance method)">#<strong>inspect</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns a JSON representation of a record.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#is_new-instance_method" title="#is_new (instance method)">#<strong>is_new</strong>  &#x21d2; Boolean </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns true if the record has not yet been persisted to the database.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#method_missing-instance_method" title="#method_missing (instance method)">#<strong>method_missing</strong>(method_name, *arguments, &amp;block)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#respond_to_missing%3F-instance_method" title="#respond_to_missing? (instance method)">#<strong>respond_to_missing?</strong>(method_name, include_private = false)  &#x21d2; Boolean </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#save-instance_method" title="#save (instance method)">#<strong>save</strong>(validate = true)  &#x21d2; Boolean </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Attempts to save the record.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#strip_diagnosis_procedure_code-instance_method" title="#strip_diagnosis_procedure_code (instance method)">#<strong>strip_diagnosis_procedure_code</strong>(val)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#to_s-instance_method" title="#to_s (instance method)">#<strong>to_s</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns a string containing the class name, ID and current attributes of a record.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  <div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    #<strong>initialize</strong>(context, rec, options = {})  &#x21d2; <tt><span class='object_link'><a href="" title="TriggerWrappers::ActiveRecordBase (class)">ActiveRecordBase</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns a new instance of ActiveRecordBase.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+</div>
+  
+</div>
+<div id="method_missing_details" class="method_details_list">
+  <h2>Dynamic Method Handling</h2>
+  <p class="notice this">
+    This class handles dynamic methods through the <tt>method_missing</tt> method
+    
+  </p>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="method_missing-instance_method">
+  
+    #<strong>method_missing</strong>(method_name, *arguments, &amp;block)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3>
+</div>
+  
+</div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="[]-instance_method">
+  
+    #<strong>[]</strong>(attr)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of a record&#39;s attribute.  Accessing an attribute which doesn&#39;t exist will raise an error.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Two ways to access a patient&#39;s MRN</p>
+</div></p>
+      
+      <pre class="example code"><code>var mrn = patient.mrn
+var mrn = patient[&#39;mrn&#39;] // Same</code></pre>
+    
+  </div>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Object</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The type depends on the type of the attribute</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="[]=-instance_method">
+  
+    #<strong>[]=</strong>(attr, value)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Replaces the value of an attribute on a record.  Accessing an attribute which doesn&#39;t exist will raise an error.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Two ways to set a patient&#39;s name</p>
+</div></p>
+      
+      <pre class="example code"><code>patient.given_name    = &#39;Bob&#39;
+patient[&#39;given_name&#39;] = &#39;Bob&#39; // Same</code></pre>
+    
+  </div>
+
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="add_error-instance_method">
+  
+    #<strong>add_error</strong>(attr_or_msg = nil, message = nil)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Adds a validation error to the given attribute with the optional message. If the attribute name is present, the error is associated with that attribute; otherwise it is associated with the record itself.</p>
+
+<p>If an attribute is not provided, the message will be attached to the base of an object.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Sets an error if a person&#39;s name is not Dave</p>
+</div></p>
+      
+      <pre class="example code"><code>if (patient.person.first_name.toLowerCase() == &#39;dave&#39;) {
+  patient.person.add_error(&#39;first_name&#39;, &#39;not allowed to be Dave&#39;)
+  patient.add_error(&#39;person&#39;, &#39;May not be called Dave&#39;)
+}</code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>attr_or_msg</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>field name OR message text</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>message</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>message text if a field name was provided</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="box_layout-instance_method">
+  
+    #<strong>box_layout</strong>(d, spaces, options = {})  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="class_name-instance_method">
+  
+    #<strong>class_name</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>in the trigger script</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="error_messages-instance_method">
+  
+    #<strong>error_messages</strong>  &#x21d2; <tt>Array</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns an array of strings containing error messages for this record that prevented it from being saved.</p>
+
+<p>This includes custom errors added by the <code>add_error</code> method, and validation errors added by CareRight when a save fails.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>array of strings (empty if no errors)</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="errors-instance_method">
+  
+    #<strong>errors</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns an object describing validation errors on a record.</p>
+
+<p>This includes custom errors added by the <code>add_error</code> method, and validation errors added by CareRight when a save fails.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Object</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>with properties for field names</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="id-instance_method">
+  
+    #<strong>id</strong>  &#x21d2; <tt>Integer</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the ID of the record.  This ID uniquely identifies the record internally to CareRight.  It is not the same as public identification fields such as MRN, ARN etc.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="inspect-instance_method">
+  
+    #<strong>inspect</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns a JSON representation of a record.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="is_new-instance_method">
+  
+    #<strong>is_new</strong>  &#x21d2; <tt>Boolean</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns true if the record has not yet been persisted to the database</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="respond_to_missing?-instance_method">
+  
+    #<strong>respond_to_missing?</strong>(method_name, include_private = false)  &#x21d2; <tt>Boolean</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="save-instance_method">
+  
+    #<strong>save</strong>(validate = true)  &#x21d2; <tt>Boolean</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Attempts to save the record.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Throw an error if a save fails</p>
+</div></p>
+      
+      <pre class="example code"><code>if (!patient.save()) {
+  script.fatal(&#39;Could not save patient&#39;)
+}</code></pre>
+    
+  </div>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>true if the record was successfully saved</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="strip_diagnosis_procedure_code-instance_method">
+  
+    #<strong>strip_diagnosis_procedure_code</strong>(val)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="to_s-instance_method">
+  
+    #<strong>to_s</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns a string containing the class name, ID and current attributes of a record.</p>
+
+<p>This is mainly intended for debugging and troubleshooting.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Mon Sep  9 11:24:42 2024 by
+  
+</div>
+
+    </div>
+  </body>
+</html>
