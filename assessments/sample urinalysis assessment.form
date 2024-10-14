@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" name="sample urinalysis assessment" title="Sample Urinalysis Assessment" assessment-version="1" ongoing="true" category="" assessment-type="0" patient-assessment="1" location-assessment="0" provider-assessment="0" plan-assessment="0" layout="0" shareable="false" supports-modern-validation="1" experimental-printing="1">
+  <description xsi:nil="true"/>
+  <triggerable_classes>
+  </triggerable_classes>
+  <elements>
+    <element element_type="hidden_field" name="patient_id" element_position="0" format="" show_in_reports="true">
+    </element>
+    <element element_type="metric" name="specific_gravity" title="Specific Gravity" value="specific_gravity_of_urine" element_position="1" required="false" show_in_reports="true" read_only="false">
+    </element>
+    <element element_type="metric" name="ph_urine" title="pH" value="ph_ur_strip" element_position="2" required="false" show_in_reports="true" read_only="false">
+    </element>
+    <element element_type="data_collection_element" name="leukocyte_esterase_ur" title="Leukocyte" value="leukocyte_esterase_ur_ql_strip" element_position="3" show_in_reports="true" read_only="false">
+    </element>
+    <element element_type="data_collection_element" name="hemoglobin_ur" title="Blood" value="hgb_ur_ql_strip" element_position="4" show_in_reports="true" read_only="false">
+    </element>
+    <element element_type="data_collection_element" name="nitrite_ur" title="Nitrite" value="nitrite_ur_ql_strip" element_position="5" show_in_reports="true" read_only="false">
+    </element>
+    <element element_type="metric" name="ketones_ur" title="Ketones" value="ketones_ur_strip_mcnc" element_position="6" required="false" show_in_reports="true" read_only="false">
+    </element>
+    <element element_type="metric" name="bilibrubin_ur" title="Bilibrubin" value="bilirub_ur_strip_mcnc" element_position="7" required="false" show_in_reports="true" read_only="false">
+    </element>
+    <element element_type="metric" name="urobilinogen_ur" title="Urobilinogen" value="urobilinogen_ur_strip_mcnc" element_position="8" required="false" show_in_reports="true" read_only="false">
+    </element>
+    <element element_type="metric" name="protein_ur" title="Protein" value="prot_ur_strip_mcnc" element_position="9" required="false" show_in_reports="true" read_only="false">
+    </element>
+    <element element_type="metric" name="glucose_ur" title="Glucose" value="glucose_ur_strip_mcnc" element_position="10" required="false" show_in_reports="true" read_only="false">
+    </element>
+  </elements>
+  <assessment_merge_forms>
+  </assessment_merge_forms>
+</form>
