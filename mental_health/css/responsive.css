@@ -1,0 +1,152 @@
+/*--------------------------------------------------------------------- File Name: responsive.css ---------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------- 991px x 768px ---------------------------------------------------------------------*/
+
+@media (min-width: 1200px) and (max-width: 1342px) {
+    #banner1 .carousel-item img {
+        height: 684px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #banner1 .carousel-item img {
+        height: 684px;
+    }
+    .titlepage h2 {
+        font-size: 36px;
+    }
+    .funkyradio label,
+    ul.choset li {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #banner1 .carousel-item img {
+        height: 642px;
+    }
+    .Jorch_head h1 {
+        font-size: 55px;
+        line-height: 55px;
+    }
+    #banner1 a.carousel-control-prev {
+        top: 43%;
+    }
+    .whte_bg,
+    .white_bg_right {
+        padding: 80px 20px !important;
+    }
+    .funkyradio label,
+    ul.choset li {
+        font-size: 16px;
+    }
+    .titlepage h2 {
+        font-size: 33px;
+        line-height: 35px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .header {
+        padding: 20px 0px;
+    }
+    #banner1 .carousel-item img {
+        height: 642px;
+    }
+    .margin_left95 {
+        margin-left: 99px;
+    }
+    .Jorch_head h1 {
+        font-size: 56px;
+        line-height: 55px;
+    }
+    .whte_bg,
+    .white_bg_right {
+        padding: 80px 20px !important;
+    }
+    #banner1 a.carousel-control-prev {
+        top: 43%;
+    }
+    .funkyradio label,
+    ul.choset li {
+        font-size: 22px;
+    }
+    .titlepage h2 {
+        font-size: 31px;
+    }
+}
+
+@media (max-width: 575px) {
+    .header {
+        padding: 20px 0px;
+    }
+    #banner1 .carousel-item img {
+        height: 342px;
+    }
+    #banner1 .carousel-control-prev,
+    #banner1 .carousel-control-next {
+        width: 63px;
+        height: 43px;
+    }
+    .logo {
+       text-align: center;
+    }
+    .Jorch_head h1 {
+        font-size: 48px;
+        line-height: 49px;
+    }
+    .poss_abso {
+        position: inherit;
+        top: 0;
+    }
+    .margin_left95 {
+        margin-left: 12px;
+    }
+    .whte_bg,
+    .white_bg_right {
+        padding: 80px 10px !important;
+    }
+    .margin_left85 {
+        margin-left: 55px;
+    }
+    .margin_right85 {
+        margin-right: 55px;
+    }
+    .funkyradio label {
+        font-size: 15px;
+    }
+    .funkyradio input[type="radio"]:empty~label::before,
+    .funkyradio input[type="checkbox"]:empty~label::before {
+        height: 55px;
+        width: 61px;
+        padding: 6px 15px 8px 0px;
+    }
+    .funkyradio input[type="radio"]:empty~label,
+    .funkyradio input[type="checkbox"]:empty~label {
+        padding-left: 72px;
+        line-height: 43px;
+    }
+    ul.choset li i img {
+        margin-right: 0px;
+    }
+    ul.choset li {
+        font-size: 12px;
+    }
+    .peasant_pro h3 {
+        padding-left: 23px;
+    }
+    .kisu {
+        font-size: 12px;
+    }
+    #myCarousel a.carousel-control-next {
+        left: 8%;
+    }
+    .titlepage h2 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .d_none {
+        display: none;
+    }
+}
